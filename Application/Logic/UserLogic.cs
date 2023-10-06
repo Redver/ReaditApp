@@ -26,6 +26,8 @@ public class UserLogic : IUserLogic
             UserName = userToCreate.UserName
         };
 
+        toCreate.PassWord = userToCreate.Password;
+
         User created = await _userDao.CreateAsync(toCreate);
         return created;
     }
