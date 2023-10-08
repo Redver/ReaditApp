@@ -1,10 +1,11 @@
+using Domain.DTOs;
 using Domain.Models;
 
 namespace Application.I_Logic;
 
 public interface IPostLogic
 {
-    Task<Post> CreateTaskAsync(Post post);
+    Task<Post> CreatePostAsync(PostCreateDto postCreateDto);
 
     Task<IEnumerable<Post>> GetAllPostsAsync();
 
@@ -15,5 +16,5 @@ public interface IPostLogic
     Task DeletePost(int id);
     
     
-    // Next, Make post IDAO,DAO,DTOs,Controller and comment function
+    // Next, Make post DAO,DTOs,Controller and comment function
 }
