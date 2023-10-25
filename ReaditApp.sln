@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileData.csproj", "{A00D29B0-BA6D-49AB-A52C-549998A190CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasm", "BlazorWasm\BlazorWasm.csproj", "{7C08A2BF-CC62-4516-B476-0EFA7691CA49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A00D29B0-BA6D-49AB-A52C-549998A190CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A00D29B0-BA6D-49AB-A52C-549998A190CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A00D29B0-BA6D-49AB-A52C-549998A190CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C08A2BF-CC62-4516-B476-0EFA7691CA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C08A2BF-CC62-4516-B476-0EFA7691CA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C08A2BF-CC62-4516-B476-0EFA7691CA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C08A2BF-CC62-4516-B476-0EFA7691CA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
