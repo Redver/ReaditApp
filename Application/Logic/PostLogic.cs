@@ -5,9 +5,8 @@ using Domain.Models;
 
 namespace Application.Logic;
 
-public class PostLogic: IPostLogic
+public class PostLogic : IPostLogic
 {
-    
     private readonly IPostDao postDao;
 
     public PostLogic(IPostDao postDao)
@@ -17,17 +16,17 @@ public class PostLogic: IPostLogic
 
     public async Task<Post> CreatePostAsync(PostCreateDto post)
     {
-        Post toCreate = new Post()
+        var toCreate = new Post
         {
             Title = post.Title,
             Author = post.Author,
             Content = post.Content,
-            PostDate =  DateTime.Now   
+            PostDate = DateTime.Now
         };
-        Post created = await postDao.CreateAsync(toCreate);
+        var created = await postDao.CreateAsync(toCreate);
         return created;
     }
-    
+
     public Task<IEnumerable<Post>> GetAllPostsAsync()
     {
         return postDao.GetAllAsync();

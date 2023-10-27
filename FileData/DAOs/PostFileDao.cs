@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace FileData.DAOs;
 
-public class PostFileDao:IPostDao
+public class PostFileDao : IPostDao
 {
     private readonly FileContext context;
 
@@ -11,7 +11,7 @@ public class PostFileDao:IPostDao
     {
         this.context = context;
     }
-    
+
     public Task<Post> CreateAsync(Post post)
     {
         int postid;
@@ -35,7 +35,7 @@ public class PostFileDao:IPostDao
 
     public Task<IEnumerable<Post>> GetAllAsync()
     {
-        IEnumerable<Post> posts = context.Posts.AsEnumerable();
+        var posts = context.Posts.AsEnumerable();
 
         return Task.FromResult(posts);
     }

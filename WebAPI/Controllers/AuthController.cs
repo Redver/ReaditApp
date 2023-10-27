@@ -3,8 +3,6 @@ using System.Security.Claims;
 using System.Text;
 using Domain.DTOs;
 using Domain.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Services;
@@ -16,8 +14,8 @@ namespace WebAPI.Controllers;
 [Route("[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly IConfiguration config;
     private readonly IAuthService authService;
+    private readonly IConfiguration config;
 
     public AuthController(IConfiguration config, IAuthService authService)
     {
@@ -32,41 +30,42 @@ public class AuthController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.Name, user.UserName)
         };
         return claims.ToList();
     }
 
     private string GenerateJwt(User user)
     {
-        List<Claim> claims = GenerateClaims(user);
+        var claims = GenerateClaims(user);
 
-        SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
-        SigningCredentials signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
+        var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
 
-        JwtHeader header = new JwtHeader(signIn);
+        var header = new JwtHeader(signIn);
 
-        JwtPayload payload = new JwtPayload(
+        var payload = new JwtPayload(
             config["Jwt:Issuer"],
             config["Jwt:Audience"],
             claims,
             null,
             DateTime.UtcNow.AddMinutes(60));
 
-        JwtSecurityToken token = new JwtSecurityToken(header, payload);
+        var token = new JwtSecurityToken(header, payload);
 
-        string serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
+        var serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
         return serializedToken;
     }
 
-    [HttpPost, Route("login")]
+    [HttpPost]
+    [Route("login")]
     public async Task<ActionResult> Login([FromBody] UserLoginDto userLoginDto)
     {
         try
         {
             authService.ValidateUser(userLoginDto.Username, userLoginDto.Password);
-            User user = await authService.ValidateUser(userLoginDto.Username, userLoginDto.Password);
-            string token = GenerateJwt(user);
+            var user = await authService.ValidateUser(userLoginDto.Username, userLoginDto.Password);
+            var token = GenerateJwt(user);
 
             return Ok(token);
         }

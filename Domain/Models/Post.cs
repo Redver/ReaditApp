@@ -9,5 +9,4 @@ public class Post
     public DateTime PostDate { get; set; }
     public int Score { get; set; }
     public LinkedList<Post> Comments { get; set; }
-    
 }

@@ -1,7 +1,115 @@
 ﻿@page "/"
+@using BlazorWasm.Services
+@using Domain.DTOs
+@inject IPostService PostService
+@inject NavigationManager navMgr
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="card">
+            <PageTitle>Readit Front Page</PageTitle>
 
-<PageTitle>Index</PageTitle>
+            <h1>Readit App</h1>
 
-<h1>Readit App</h1>
+            Welcome, please log in or register to access the front page.
+        </div>
+    </NotAuthorized>
+    <Authorized>
+        <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        }
 
-Welcome, please log in or register to access the front page.
+    .post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    margin: 10px;
+    }
+
+    .post-content {
+        padding: 10px;
+    }
+
+    .post-title {
+        font-size: 18px;
+        margin: 0;
+        color: #333;
+    }
+
+    .post-footer {
+        background-color: #f6f6f6;
+        padding: 8px 10px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #ccc;
+    }
+
+    .upvote, .comment {
+        font-size: 14px;
+        color: #777;
+    }  
+
+    .comment {
+        margin-left: 10px;
+    }  
+        </style>
+        <div class = "allPosts">
+        <div class="post">
+            <div class="post-content">
+                <h2 class="post-title">Sample Reddit Card</h2>
+            </div>
+            <div class="post-footer">
+                <span class="upvote">↑ 123</span>
+                <span class="comment">💬 45</span>
+            </div>
+        </div>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private string errorLabel;
+
+    private async Task GetAllAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            var enumerable = await PostService.GetAllAsync();
+            var allPosts = enumerable.ToList();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+
+    private async Task AddNewPost()
+    {
+        var title = new string(" ");
+        var author = new string(" ");
+        var content = new string(" ");
+        var createDto = new PostCreateDto(title, author, content);
+
+        errorLabel = "";
+        try
+        {
+            await PostService.CreateAsync(createDto);
+            navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+
+}

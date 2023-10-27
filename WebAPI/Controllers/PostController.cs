@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
 
-
 [ApiController]
 [Route("[controller]")]
 [Authorize]
@@ -18,13 +17,13 @@ public class PostController : ControllerBase
     {
         this.postLogic = postLogic;
     }
-    
+
     [HttpPost]
     public async Task<ActionResult<Post>> CreateAsync(PostCreateDto dto)
     {
         try
         {
-            Post post = await postLogic.CreatePostAsync(dto);
+            var post = await postLogic.CreatePostAsync(dto);
             return Created($"/posts/{post.Id}", post);
         }
         catch (Exception e)
@@ -32,15 +31,14 @@ public class PostController : ControllerBase
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
         }
-
     }
-    
+
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Post>>> GetAllAsync()
     {
         try
         {
-            IEnumerable<Post> posts = await postLogic.GetAllPostsAsync();
+            var posts = await postLogic.GetAllPostsAsync();
             return Ok(posts);
         }
         catch (Exception e)

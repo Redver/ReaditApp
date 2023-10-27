@@ -14,7 +14,7 @@ public interface IPostLogic
     Task<Post> GetPostByIdAsync(int id);
 
     Task DeletePost(int id);
-    
-    
+
+
     // Next, Make post DAO,DTOs,Controller and comment function
 }
