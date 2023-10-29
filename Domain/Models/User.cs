@@ -6,4 +6,5 @@ public class User
     public string? PassWord { get; set; }
     public int? Id { get; set; }
     public int? Coins { get; set; }
+    
 }

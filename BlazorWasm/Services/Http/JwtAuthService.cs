@@ -42,9 +42,23 @@ public class JwtAuthService : IAuthService
         throw new NotImplementedException();
     }
 
-    public Task RegisterAsync(User user)
+    public async Task RegisterAsync(string username, string password)
     {
-        throw new NotImplementedException();
+        UserLoginDto userLoginDto = new()
+        {
+            Username = username,
+            Password = password
+        };
+
+        var userAsJson = JsonSerializer.Serialize(userLoginDto);
+        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+
+        var response = await client.PostAsync("https://localhost:7130/User", content);
+        
+        var responseContent = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
+
     }
 
     public Task<ClaimsPrincipal> GetAuthAsync()

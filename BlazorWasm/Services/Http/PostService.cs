@@ -1,4 +1,5 @@
 using System.Net.Http.Headers;
+using System.Text;
 using System.Text.Json;
 using Domain.DTOs;
 using Domain.Models;
@@ -29,8 +30,16 @@ public class PostService : IPostService
         return posts!;
     }
 
-    public Task<Post> CreateAsync(PostCreateDto dto)
+    public async Task CreateAsync(PostCreateDto dto)
     {
-        throw new NotImplementedException();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
+        var userAsJson = JsonSerializer.Serialize(dto);
+        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+        var response = await client.PostAsync("https://localhost:7130/Post", content);
+        
+        var responseContent = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
+        
     }
 }

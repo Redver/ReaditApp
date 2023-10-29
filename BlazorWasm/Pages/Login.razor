@@ -1,5 +1,6 @@
 @page "/Login"
 @using BlazorWasm.Services
+@using Domain.Models
 @inject IAuthService authService
 @inject NavigationManager navMgr
 <AuthorizeView>
@@ -52,6 +53,9 @@
             <div class="field">
                 <button class="loginbtn" @onclick="LoginAsync">Log in</button>
             </div>
+            <div class="field">
+                <button class="loginbtn" @onclick="RegisterAsync">Register</button>
+                </div>
         </div>
     </NotAuthorized>
     <Authorized>
@@ -73,6 +77,21 @@
         {
             await authService.LoginAsync(userName, password);
             navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+
+    private async Task RegisterAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            await authService.RegisterAsync(userName, password);
+            errorLabel = "sucessfull registration";
         }
         catch (Exception e)
         {

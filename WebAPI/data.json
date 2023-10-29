@@ -5,7 +5,56 @@
       "PassWord": "onetwo3FOUR",
       "Id": 1,
       "Coins": null
+    },
+    {
+      "UserName": "jeff",
+      "PassWord": "guy",
+      "Id": 2,
+      "Coins": null
+    },
+    {
+      "UserName": "abcc",
+      "PassWord": "b",
+      "Id": 3,
+      "Coins": null
+    },
+    {
+      "UserName": "Foyurth",
+      "PassWord": "man",
+      "Id": 4,
+      "Coins": null
+    },
+    {
+      "UserName": "tom",
+      "PassWord": "janks",
+      "Id": 5,
+      "Coins": null
+    },
+    {
+      "UserName": "man",
+      "PassWord": "man",
+      "Id": 6,
+      "Coins": null
     }
   ],
-  "Posts": []
+  "Posts": [
+    {
+      "Id": 1,
+      "Title": "manam",
+      "Author": "man",
+      "Content": "manana",
+      "PostDate": "2023-10-29T14:44:47.9054862+02:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 2,
+      "Title": "manamnamnam",
+      "Author": "man",
+      "Content": "amnamnamna",
+      "PostDate": "2023-10-29T14:45:48.0482777+02:00",
+      "Score": 0,
+      "Comments": null
+    }
+  ]
 }

@@ -7,5 +7,5 @@ public interface IPostService
 {
     Task<IEnumerable<Post>> GetAllAsync();
 
-    Task<Post> CreateAsync(PostCreateDto dto);
+    Task CreateAsync(PostCreateDto dto);
 }
