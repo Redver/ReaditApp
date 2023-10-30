@@ -5,20 +5,121 @@
 @using System.Collections.ObjectModel
 @using System.Runtime.InteropServices.JavaScript
 @using Domain.Models
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    margin: 0;
+    z-index: 3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+
+.post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post-title {
+    font-size: 18px;
+}
+
+.post-author {
+    color: #666;
+    font-size: 14px;
+}
+
+.post-date {
+    color: #666;
+    font-size: 14px;
+}
+
+.new-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.new-post-title,
+.new-post-content {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.new-post-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 360px;
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+</style>
     <header>
         <h1>Readit</h1>
         </header>
 
     <div class="container">
-        <div class="content">
-            <div class="post">
-                <h2 class="post-title" @bind="title"></h2>
-                <p class="post-author" @bind="author"></p>
-                <p class="post-date" @bind="datePosted"></p>
-                <p class="post-content" @bind="content">
-                </p>
+    <div class="content">
+        <div class="post">
+            <div class="post-title">
+                <input type="text" @bind="title"/>
             </div>
-
+            <div class="post-author">
+                <input type="text" @bind="author"/>
+            </div>
+            <div class="post-date">
+                <input type="text"@bind="datePosted"/>
+            </div>
+            <div class="post-content">
+                <input type="text" @bind="content"/>
+            </div>
             <div class="comments">
                 <h2>Comments</h2>
                 <div class="comment">
@@ -36,23 +137,26 @@
 
         <div class="sidebar">
             <div class="new-post">
-                <h2>Create a New Post</h2>
+                <h2>Create a New Comment</h2>
                 <form>
-                    <input type="text" placeholder="Title" class="new-post-title">
-                    <textarea placeholder="Your post content" class="new-post-content"></textarea>
+                    <textarea placeholder="Your comment content" class="new-post-content"></textarea>
                     <button class="new-post-button">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    </div>
 
 @code {
     [CascadingParameter]
     private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+
     private string errorLabel;
     private string title = "placeholder";
     private string content = "placeholder";
-    private int id;
     private Post _thisPostPage;
     private string author = "placeholder";
     private DateTime datePosted = new DateTime();
@@ -65,7 +169,7 @@
         {
             IEnumerable<Post> postList = await PostService.GetAllAsync();
             Post[] post = postList.ToArray();
-            _thisPostPage = post[id];
+            _thisPostPage = post[Id];
             title = _thisPostPage.Title;
             content = _thisPostPage.Content;
             comments = _thisPostPage.Comments;
