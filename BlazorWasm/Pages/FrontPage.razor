@@ -3,6 +3,7 @@
 @using Domain.DTOs
 @using Domain.Models
 @inject IPostService PostService
+@inject IAuthService authService
 @inject NavigationManager navMgr
 <AuthorizeView>
     <NotAuthorized>
@@ -146,8 +147,6 @@
 </AuthorizeView>
 
 @code {
-    [CascadingParameter]
-    private Task<AuthenticationState> authenticationStateTask { get; set; }
     private string errorLabel;
     private string title;
     private string content;
@@ -155,9 +154,8 @@
 
     protected override async Task OnInitializedAsync()  
     {
-        var authState = await authenticationStateTask;
-        var user = authState.User;
-        if (user.Identity.IsAuthenticated)
+        var authState = await authService.GetAuthAsync();
+        if (authState.Identity.IsAuthenticated)
         {
             try
             {
@@ -183,10 +181,10 @@
 
     private async Task AddNewPost()
     {
-        var authState = await authenticationStateTask;
-        var user = authState.User;
+        var authState = await authService.GetAuthAsync();
+        var user = authState.Identity;
 
-        string author = user.Identity.Name;
+        string author = user.Name;
         var createDto = new PostCreateDto(title, author, content);
         Console.WriteLine(title,author,content);
         errorLabel = "";
