@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/FrontPage"
 @using BlazorWasm.Services
 @using Domain.DTOs
 @using Domain.Models
@@ -152,6 +152,34 @@
     private string title;
     private string content;
     private List<Post> AllPostsList = new List<Post>();
+
+    protected override async Task OnInitializedAsync()  
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            try
+            {
+                var enumerable = await PostService.GetAllAsync();
+                var allPosts = enumerable.ToList();
+                for (int i = 0; i < allPosts.Count(); i++)
+                {
+                    AllPostsList[i] = allPosts[i];
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                errorLabel = $"Error: {e.Message}";
+            }
+        }
+        else
+        {
+            errorLabel = "User is not authenticated.";
+        }
+        errorLabel = "";
+    }
 
     private async Task AddNewPost()
     {
