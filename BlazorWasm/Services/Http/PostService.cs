@@ -18,12 +18,12 @@ public class PostService : IPostService
     public async Task<IEnumerable<Post>> GetAllAsync()
     {
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
-        var response = await client.GetAsync("https://localhost:7130/Post");
+        HttpResponseMessage response = await client.GetAsync("https://localhost:7130/Post");
         var responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
 
-        var posts = JsonSerializer.Deserialize<IEnumerable<Post>>(responseContent, new JsonSerializerOptions
+        IEnumerable<Post>? posts = JsonSerializer.Deserialize<IEnumerable<Post>>(responseContent, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         });
