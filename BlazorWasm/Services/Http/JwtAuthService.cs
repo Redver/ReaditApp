@@ -37,9 +37,12 @@ public class JwtAuthService : IAuthService
         OnAuthStateChanged.Invoke(principal);
     }
 
-    public Task LogoutAsync()
+    public async Task LogoutAsync()
     {
-        throw new NotImplementedException();
+        Jwt = null;
+        
+        var anonymousPrincipal = new ClaimsPrincipal(new ClaimsIdentity());
+        OnAuthStateChanged.Invoke(anonymousPrincipal);
     }
 
     public async Task RegisterAsync(string username, string password)

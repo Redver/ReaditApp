@@ -1,0 +1,82 @@
+@inject IPostService PostService
+@page "/Post/{id:int}"
+@using BlazorWasm.Services.Http
+@using BlazorWasm.Services
+@using System.Collections.ObjectModel
+@using System.Runtime.InteropServices.JavaScript
+@using Domain.Models
+    <header>
+        <h1>Readit</h1>
+        </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="post">
+                <h2 class="post-title" @bind="title"></h2>
+                <p class="post-author" @bind="author"></p>
+                <p class="post-date" @bind="datePosted"></p>
+                <p class="post-content" @bind="content">
+                </p>
+            </div>
+
+            <div class="comments">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <p class="comment-author">Comment by User456</p>
+                    <p class="comment-date">Date: 2023-10-30</p>
+                    <p class="comment-content">
+                        This is a comment on the post. Sed non urna. Donec et ante. Phasellus eu ligula.
+                        Vivamus laoreet. Aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <!-- More comments can be added here -->
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="new-post">
+                <h2>Create a New Post</h2>
+                <form>
+                    <input type="text" placeholder="Title" class="new-post-title">
+                    <textarea placeholder="Your post content" class="new-post-content"></textarea>
+                    <button class="new-post-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+    private string errorLabel;
+    private string title = "placeholder";
+    private string content = "placeholder";
+    private int id;
+    private Post _thisPostPage;
+    private string author = "placeholder";
+    private DateTime datePosted = new DateTime();
+    private LinkedList<Post> comments;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationStateTask;
+        errorLabel = "";
+        try
+        {
+            IEnumerable<Post> postList = await PostService.GetAllAsync();
+            Post[] post = postList.ToArray();
+            _thisPostPage = post[id];
+            title = _thisPostPage.Title;
+            content = _thisPostPage.Content;
+            comments = _thisPostPage.Comments;
+            author = _thisPostPage.Author;
+            datePosted = _thisPostPage.PostDate;
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}

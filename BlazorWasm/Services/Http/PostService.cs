@@ -33,13 +33,26 @@ public class PostService : IPostService
     public async Task CreateAsync(PostCreateDto dto)
     {
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
-        var userAsJson = JsonSerializer.Serialize(dto);
-        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+        var postAsJson = JsonSerializer.Serialize(dto);
+        StringContent content = new(postAsJson, Encoding.UTF8, "application/json");
         var response = await client.PostAsync("https://localhost:7130/Post", content);
         
         var responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
         
+    }
+
+    public async Task UpdateAsync(AddCommentToPostDto dto)
+    {
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
+        var postAsJson = JsonSerializer.Serialize(dto);
+        string id = dto.PostId.ToString();
+        StringContent content = new(postAsJson, Encoding.UTF8, "application/json");
+        var response = await client.PatchAsync("https://localhost:7130/Post/"+id, content);
+        
+        var responseContent = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
     }
 }

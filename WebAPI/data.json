@@ -2,7 +2,7 @@
   "Users": [
     {
       "UserName": "trmo",
-      "PassWord": "onetwo3FOUR",
+      "PassWord": "aaa",
       "Id": 1,
       "Coins": null
     },
@@ -53,6 +53,15 @@
       "Author": "man",
       "Content": "amnamnamna",
       "PostDate": "2023-10-29T14:45:48.0482777+02:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 3,
+      "Title": "New post",
+      "Author": "man",
+      "Content": "post post",
+      "PostDate": "2023-10-30T15:18:48.172718+02:00",
       "Score": 0,
       "Comments": null
     }
