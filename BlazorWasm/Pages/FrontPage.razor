@@ -154,29 +154,20 @@
 
     protected override async Task OnInitializedAsync()  
     {
-        var authState = await authService.GetAuthAsync();
-        if (authState.Identity.IsAuthenticated)
+        try
         {
-            try
+            var enumerable = await PostService.GetAllAsync();
+            var allPosts = enumerable.ToList();
+            for (int i = 0; i < allPosts.Count(); i++)
             {
-                var enumerable = await PostService.GetAllAsync();
-                var allPosts = enumerable.ToList();
-                for (int i = 0; i < allPosts.Count(); i++)
-                {
-                    AllPostsList[i] = allPosts[i];
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                errorLabel = $"Error: {e.Message}";
+                AllPostsList.Add(allPosts[i]);
             }
         }
-        else
+        catch (Exception e)
         {
-            errorLabel = "User is not authenticated.";
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
         }
-        errorLabel = "";
     }
 
     private async Task AddNewPost()

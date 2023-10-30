@@ -6,7 +6,7 @@ namespace FileData;
 public class FileContext
 {
     private const string filePath = "data.json";
-    private DataContainer? dataContainer; // Not scalable, remove if re-using
+    private DataContainer? dataContainer;
 
     public ICollection<Post> Posts
     {

@@ -1,14 +1,12 @@
 using Application.I_Logic;
 using Domain.DTOs;
 using Domain.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[Authorize]
 public class PostController : ControllerBase
 {
     private readonly IPostLogic postLogic;
