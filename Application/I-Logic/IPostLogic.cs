@@ -10,11 +10,5 @@ public interface IPostLogic
     Task<IEnumerable<Post>> GetAllPostsAsync();
     Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto dto);
 
-    Task UpdatePostAsync(Post post);
-
-    Task<Post> GetPostByIdAsync(int id);
-
-    Task DeletePost(int id);
-    
-    
+    Task<IEnumerable<Post>> UpdatePostAsync(PostUpdateDto dto);
 }

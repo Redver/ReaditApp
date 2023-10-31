@@ -61,7 +61,18 @@ public class PostFileDao : IPostDao
             posts = posts.Where(p =>
                 p.Content.Contains(searchPostParametersDto.bodyContains, StringComparison.OrdinalIgnoreCase));
         }
+        
+        if (searchPostParametersDto.id != null)
+        {
+            posts = posts.Where(p =>
+                p.Id == searchPostParametersDto.id  );
+        }
 
         return Task.FromResult(posts);
-    }  
+    }
+
+    public Task<Post> UpdateAsync(Post post)
+    {
+        
+    }
 }

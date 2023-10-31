@@ -10,4 +10,6 @@ public interface IPostDao
     Task<IEnumerable<Post>> GetAllAsync();
     
     Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto dto);
+
+    Task<Post> UpdateAsync(Post post);
 }

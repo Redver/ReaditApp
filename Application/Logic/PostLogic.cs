@@ -32,13 +32,13 @@ public class PostLogic : IPostLogic
         return postDao.GetAllAsync();
     }
     
-    public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto)
+    public   Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto)
     {
         return postDao.GetAsync(searchPostParametersDto);
     }
-
-
-    public Task UpdatePostAsync(PostUpdateDto postUpdateDto)
+    
+    
+    public   Task<IEnumerable<Post>> UpdatePostAsync(PostUpdateDto postUpdateDto)
     {
         var newComment = new Post()
         {
@@ -47,8 +47,10 @@ public class PostLogic : IPostLogic
             Id = postUpdateDto.PostId
             // Id is of the post this is attached to
         };
+        SearchPostParametersDto dto = new SearchPostParametersDto(null,null,null,postUpdateDto.PostId);
+        Task<IEnumerable<Post>> postToUpdate = this.GetAsync(dto);
         
-        return newComment;
+        return postToUpdate;
     }
 
     public Task<Post> GetPostByIdAsync(int id)
