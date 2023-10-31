@@ -1,7 +1,9 @@
 using Application.I_Logic;
 using Domain.DTOs;
 using Domain.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace WebAPI.Controllers;
 
@@ -46,13 +48,14 @@ public class PostController : ControllerBase
         }
     }
 
-    [HttpPatch]
-    public async Task<ActionResult<Post>> PatchAsync(PostUpdateDto dto)
+    [HttpPatch("{postId}")]
+
+    public async Task<ActionResult> PatchAsync(int postId, PostUpdateDto dto)
     {
         try
         {
-            var post = await postLogic.UpdatePostAsync(dto);
-            return Created($"/posts/{post.Id}", post);
+            await postLogic.UpdatePostAsync(dto);
+            return Ok();
         }
         catch (Exception e)
         {

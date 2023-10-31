@@ -34,33 +34,10 @@
             </div>
         </div>
                     <div class="comments">
-                        <h2>Comments</h2>
-                        @if (!(comments == null) )
-                        {
-                            @foreach (var post in comments)
-                            {
-                                <div class="comment">
-                                    <p class="comment-author">@post.Author</p>
-                                    <p class="comment-date">@post.Author</p>
-                                    <p class="comment-content">
-                                        @post.Content
-                                    </p>
-                                </div>
-                            } 
-                        }
-                        else
-                        {
-                            <h3>There are no comments</h3>
-                        }
                         </div>
     </div>
 
     <div class="sidebar">
-        <div class="new-post">
-            <h2>Create a New Comment</h2>
-            <textarea @bind="newComment" placeholder="Your comment content" class="new-post-content"></textarea>
-            <button class="new-post-button" @onclick="RefreshPost">Submit</button>
-        </div>
     </div>
 </div>
     </Authorized>
@@ -79,7 +56,7 @@
     private Post _thisPostPage;
     private string author = "placeholder";
     private DateTime datePosted = new DateTime();
-    private List<Post> comments;
+    private List<Post> comments = new List<Post>();
 
     private string newComment = "Write your comment here";
     
@@ -111,46 +88,4 @@
             errorLabel = $"Error: {e.Message}";
         }
     }
-    
-    private async Task RefreshPost()
-    {
-        try
-        {
-            var authState = await authService.GetAuthAsync();
-            var user = authState.Identity;
-
-            var update = new PostUpdateDto(Id, user.Name, newComment);
-            errorLabel = "";
-            try
-            {
-                await PostService.UpdateAsync(update);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                errorLabel = $"Error: {e.Message}";
-            }
-            
-            IEnumerable<Post> postList = await PostService.GetAllAsync();
-            List<Post> post = postList.ToArray().ToList();
-            for (int i = 0; i < post.Count; i++)
-            {
-                Console.WriteLine(post[i]);
-            }
-            Console.WriteLine(Id);
-            _thisPostPage = post[Id-1];
-            title = _thisPostPage.Title;
-            content = _thisPostPage.Content;
-            author = _thisPostPage.Author;
-            datePosted = _thisPostPage.PostDate;
-            comments = _thisPostPage.Comments;
-
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            errorLabel = $"Error: {e.Message}";
-        } 
-    }
-
 }

@@ -68,7 +68,12 @@
         }
         catch (Exception e)
         {
+            NullReferenceException n = new NullReferenceException();
             Console.WriteLine(e);
+            if (e.GetType() == n.GetType())
+            {
+                errorLabel = $"Error: User Does Not Exist";
+            }
             errorLabel = $"Error: {e.Message}";
         }
     }

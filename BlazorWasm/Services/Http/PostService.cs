@@ -41,7 +41,7 @@ public class PostService : IPostService
         if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
         
     }
-
+/*
     public async Task UpdateAsync(PostUpdateDto updateDto)
     {
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
@@ -53,5 +53,23 @@ public class PostService : IPostService
         var responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode) throw new Exception(responseContent);
+    }
+    */
+    public async Task UpdateAsync(PostUpdateDto dto)
+    {
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
+        int? id = dto.PostId;
+        id--;
+        string stringId = id.ToString();
+        string dtoAsJson = JsonSerializer.Serialize(dto);
+        StringContent body = new StringContent(dtoAsJson, Encoding.UTF8, "application/json");
+
+        HttpResponseMessage response = await client.PatchAsync("https://localhost:7130/post/"+stringId, body);
+        if (!response.IsSuccessStatusCode)
+        {
+            string content = await response.Content.ReadAsStringAsync();
+            throw new Exception(content);
+        }
+
     }
 }

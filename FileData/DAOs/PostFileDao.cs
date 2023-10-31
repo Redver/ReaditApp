@@ -15,7 +15,7 @@ public class PostFileDao : IPostDao
 
     public Task<Post> CreateAsync(Post post)
     {
-        int postid;
+        int? postid;
         if (context.Posts.Any())
         {
             postid = context.Posts.Max(u => u.Id);
@@ -70,9 +70,18 @@ public class PostFileDao : IPostDao
 
         return Task.FromResult(posts);
     }
-
-    public Task<Post> UpdateAsync(Post post)
+    
+    public Task UpdateAsync(Post post)
     {
-        
+        Post? existing = context.Posts.FirstOrDefault(p => p.Id == post.Id);
+        if (existing == null)
+        {
+            throw new Exception($"Post with id: {post.Id} doesn't exist");
+        }
+        context.Posts.Remove(existing);
+        context.Posts.Add(post);
+        context.SaveChanges();
+        return Task.CompletedTask;
     }
+    
 }

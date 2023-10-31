@@ -35,6 +35,24 @@
       "PassWord": "man",
       "Id": 6,
       "Coins": null
+    },
+    {
+      "UserName": "Redvers",
+      "PassWord": "1234",
+      "Id": 7,
+      "Coins": null
+    },
+    {
+      "UserName": "Red",
+      "PassWord": "1234",
+      "Id": 8,
+      "Coins": null
+    },
+    {
+      "UserName": "Redv",
+      "PassWord": "1234",
+      "Id": 9,
+      "Coins": null
     }
   ],
   "Posts": [
@@ -188,6 +206,33 @@
       "Author": "man",
       "Content": "mansiojfsighsiuhsiufsough eghs;oihhs ;oaerhgoaer gha e;oighae ;oi",
       "PostDate": "2023-10-31T14:00:49.9272003+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 18,
+      "Title": "wow",
+      "Author": "man",
+      "Content": "new post",
+      "PostDate": "2023-10-31T17:36:07.2191884+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 19,
+      "Title": "I\u0027m making a new post",
+      "Author": "Redvers",
+      "Content": "It should redirect me to the post page when it is created",
+      "PostDate": "2023-10-31T18:19:08.7772316+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 20,
+      "Title": "Another Test Post",
+      "Author": "Redv",
+      "Content": "Post to help test lorum ipsum",
+      "PostDate": "2023-10-31T18:23:34.2625491+01:00",
       "Score": 0,
       "Comments": null
     }

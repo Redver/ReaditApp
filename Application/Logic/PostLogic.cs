@@ -38,19 +38,20 @@ public class PostLogic : IPostLogic
     }
     
     
-    public   Task<IEnumerable<Post>> UpdatePostAsync(PostUpdateDto postUpdateDto)
+    public   async Task UpdatePostAsync(PostUpdateDto postUpdateDto)
     {
-        var newComment = new Post()
-        {
-            Author = postUpdateDto.Commenter,
-            Content = postUpdateDto.Comment,
-            Id = postUpdateDto.PostId
-            // Id is of the post this is attached to
-        };
-        SearchPostParametersDto dto = new SearchPostParametersDto(null,null,null,postUpdateDto.PostId);
-        Task<IEnumerable<Post>> postToUpdate = this.GetAsync(dto);
         
-        return postToUpdate;
+        SearchPostParametersDto postSearchParameter = new SearchPostParametersDto(null,null,null,postUpdateDto.PostId);
+
+        IEnumerable<Post> toUpdate = await postDao.GetAsync(postSearchParameter);
+        
+        Post newComment = new Post(postUpdateDto.PostId, null, postUpdateDto.Commenter, postUpdateDto.Comment);
+
+        Post postToUpdate = toUpdate.First();
+        
+        postToUpdate.Comments.Add(newComment);
+        
+        await postDao.UpdateAsync(postToUpdate);
     }
 
     public Task<Post> GetPostByIdAsync(int id)
