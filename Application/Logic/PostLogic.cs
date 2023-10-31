@@ -44,8 +44,11 @@ public class PostLogic : IPostLogic
         {
             Author = postUpdateDto.Commenter,
             Content = postUpdateDto.Comment,
-            Time = postUpdateDto.Time,
+            Id = postUpdateDto.PostId
+            // Id is of the post this is attached to
         };
+        
+        return newComment;
     }
 
     public Task<Post> GetPostByIdAsync(int id)
