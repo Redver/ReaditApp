@@ -5,120 +5,18 @@
 @using System.Collections.ObjectModel
 @using System.Runtime.InteropServices.JavaScript
 @using Domain.Models
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    z-index: 2;
-}
-
-h1 {
-    margin: 0;
-    z-index: 3;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    z-index: 4;
-}
-
-.post {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.new-post {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.new-post-content {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.new-post-button {
-    background-color: #ff4500;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sidebar {
-    width: 360px;
-    position: fixed;
-    top: 200px;
-    left: 20px;
-    background-color: #fff;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-.post-title {
-    font-size: 18px;
-    color: #424242;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.post-author {
-    color: #000000;
-    font-size: 14px;
-    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.post-date {
-    color: #a6a6a6;
-    font-size: 14px;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.content {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-}
-.post-content {
-    color: #a6a6a6;
-    font-size: 14px;
-    font-family: "Times New Roman", Times, serif;
-}
-
-
-</style>
-    <header>
+    <div class = "header">
         <h1>Readit</h1>
-        </header>
+        </div>
 
     <div class="container">
         <div class="content">
             <div class="post">
                 <h2 class="post-title">@title</h2>
-                <p class="post-author">@author</p>
-                <p class="post-date" >@datePosted</p>
                 <p class="post-content">@content</p>
+                    <div class ="post-info">
+                    <div class="post-info-text ">Posted By:@author, Posted On:@datePosted</div>
+                    </div>
                 </div>
             <div class="comments">
                 <h2>Comments</h2>
@@ -138,10 +36,8 @@ h1 {
         <div class="sidebar">
             <div class="new-post">
                 <h2>Create a New Comment</h2>
-                <form>
                     <textarea placeholder="Your comment content" class="new-post-content"></textarea>
                     <button class="new-post-button">Submit</button>
-                </form>
             </div>
         </div>
     </div>

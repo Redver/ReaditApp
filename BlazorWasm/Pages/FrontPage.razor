@@ -7,7 +7,7 @@
 @inject NavigationManager navMgr
 <AuthorizeView>
     <NotAuthorized>
-        <div class="card">
+        <div class="header">
             <PageTitle>Readit Front Page</PageTitle>
 
             <h1>Readit App</h1>
@@ -26,11 +26,9 @@
                 <div class="sidebar">
                     <div class="new-post">
                         <h2>Create a New Post</h2>
-                        <form>
                             <input type="text" @bind="title" placeholder="Title" class="new-post-title">
                             <textarea @bind="content" placeholder="Your post"  class="new-post-content"></textarea>
                             <button class="new-post-button" @onclick="AddNewPost">Submit</button>
-                        </form>
                     </div>
                 </div>
                 <div class="post-list">
@@ -88,6 +86,10 @@
         try
         {
             await PostService.CreateAsync(createDto);
+            var enumerable = await PostService.GetAllAsync();
+            var allPosts = enumerable.ToList();
+            int maxValue = allPosts.Count;
+            navMgr.NavigateTo("/Post/"+maxValue);
         }
         catch (Exception e)
         {

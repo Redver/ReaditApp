@@ -32,7 +32,6 @@ public class PostService : IPostService
 
     public async Task CreateAsync(PostCreateDto dto)
     {
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
         var postAsJson = JsonSerializer.Serialize(dto);
         StringContent content = new(postAsJson, Encoding.UTF8, "application/json");
         var response = await client.PostAsync("https://localhost:7130/Post", content);
