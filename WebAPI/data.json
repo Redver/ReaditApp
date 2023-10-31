@@ -163,6 +163,33 @@
       "PostDate": "2023-10-31T13:08:30.9544942+01:00",
       "Score": 0,
       "Comments": null
+    },
+    {
+      "Id": 15,
+      "Title": "New Post",
+      "Author": "man",
+      "Content": "Man",
+      "PostDate": "2023-10-31T13:58:37.0288443+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 16,
+      "Title": "help",
+      "Author": "man",
+      "Content": "rlpers",
+      "PostDate": "2023-10-31T13:59:53.3030636+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 17,
+      "Title": "mans",
+      "Author": "man",
+      "Content": "mansiojfsighsiuhsiufsough eghs;oihhs ;oaerhgoaer gha e;oighae ;oi",
+      "PostDate": "2023-10-31T14:00:49.9272003+01:00",
+      "Score": 0,
+      "Comments": null
     }
   ]
 }

@@ -9,5 +9,5 @@ public interface IPostService
 
     Task CreateAsync(PostCreateDto dto);
 
-    Task UpdateAsync(AddCommentToPostDto dto);
+    Task UpdateAsync(PostUpdateDto updateDto);
 }

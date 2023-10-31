@@ -42,11 +42,11 @@ public class PostService : IPostService
         
     }
 
-    public async Task UpdateAsync(AddCommentToPostDto dto)
+    public async Task UpdateAsync(PostUpdateDto updateDto)
     {
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", JwtAuthService.Jwt);
-        var postAsJson = JsonSerializer.Serialize(dto);
-        string id = dto.PostId.ToString();
+        var postAsJson = JsonSerializer.Serialize(updateDto);
+        string id = updateDto.PostId.ToString();
         StringContent content = new(postAsJson, Encoding.UTF8, "application/json");
         var response = await client.PatchAsync("https://localhost:7130/Post/"+id, content);
         

@@ -38,9 +38,14 @@ public class PostLogic : IPostLogic
     }
 
 
-    public Task UpdatePostAsync(Post post)
+    public Task UpdatePostAsync(PostUpdateDto postUpdateDto)
     {
-        throw new NotImplementedException();
+        var newComment = new Post()
+        {
+            Author = postUpdateDto.Commenter,
+            Content = postUpdateDto.Comment,
+            Time = postUpdateDto.Time,
+        };
     }
 
     public Task<Post> GetPostByIdAsync(int id)
