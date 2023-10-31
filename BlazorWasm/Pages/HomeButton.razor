@@ -1,0 +1,15 @@
+@inject NavigationManager navMgr
+@namespace Login
+<style>.icon {
+           width: 30px;
+           cursor: pointer;
+       }</style>
+
+<img class="icon" src="img/Home.png" @onclick="Home"/>
+
+@code {
+    private void Home()
+    {
+        navMgr.NavigateTo("/FrontPage");
+    }
+}

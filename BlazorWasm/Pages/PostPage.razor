@@ -34,25 +34,11 @@ h1 {
     z-index: 4;
 }
 
-.post-card {
+.post {
     background-color: #fff;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     padding: 10px;
-}
-
-.post-title {
-    font-size: 18px;
-}
-
-.post-author {
-    color: #666;
-    font-size: 14px;
-}
-
-.post-date {
-    color: #666;
-    font-size: 14px;
 }
 
 .new-post {
@@ -62,7 +48,6 @@ h1 {
     margin-top: 20px;
 }
 
-.new-post-title,
 .new-post-content {
     width: 100%;
     margin-bottom: 10px;
@@ -83,12 +68,6 @@ h1 {
     justify-content: space-between;
 }
 
-.content {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-}
-
 .sidebar {
     width: 360px;
     position: fixed;
@@ -98,6 +77,34 @@ h1 {
     overflow-x: hidden;
     padding-top: 20px;
 }
+.post-title {
+    font-size: 18px;
+    color: #424242;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.post-author {
+    color: #000000;
+    font-size: 14px;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.post-date {
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+.post-content {
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+}
 
 
 </style>
@@ -106,20 +113,13 @@ h1 {
         </header>
 
     <div class="container">
-    <div class="content">
-        <div class="post">
-            <div class="post-title">
-                <input type="text" @bind="title"/>
-            </div>
-            <div class="post-author">
-                <input type="text" @bind="author"/>
-            </div>
-            <div class="post-date">
-                <input type="text"@bind="datePosted"/>
-            </div>
-            <div class="post-content">
-                <input type="text" @bind="content"/>
-            </div>
+        <div class="content">
+            <div class="post">
+                <h2 class="post-title">@title</h2>
+                <p class="post-author">@author</p>
+                <p class="post-date" >@datePosted</p>
+                <p class="post-content">@content</p>
+                </div>
             <div class="comments">
                 <h2>Comments</h2>
                 <div class="comment">
@@ -145,7 +145,6 @@ h1 {
             </div>
         </div>
     </div>
-    </div>
 
 @code {
     [CascadingParameter]
@@ -168,8 +167,13 @@ h1 {
         try
         {
             IEnumerable<Post> postList = await PostService.GetAllAsync();
-            Post[] post = postList.ToArray();
-            _thisPostPage = post[Id];
+            List<Post> post = postList.ToArray().ToList();
+            for (int i = 0; i < post.Count; i++)
+            {
+                Console.WriteLine(post[i]);
+            }
+            Console.WriteLine(Id);
+            _thisPostPage = post[Id-1];
             title = _thisPostPage.Title;
             content = _thisPostPage.Content;
             comments = _thisPostPage.Comments;
