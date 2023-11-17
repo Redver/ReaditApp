@@ -30,13 +30,20 @@ public class UserEFCDao: IUserDao
         return existing;
     }
 
-    public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters)
+    public async Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters)
     {
-        throw new NotImplementedException();
-    }
+        IQueryable<User> usersQuery = context.Users.AsQueryable();
+        if (searchParameters.UsernameContains != null)
+        {
+            usersQuery = usersQuery.Where(u => u.UserName.ToLower().Contains(searchParameters.UsernameContains.ToLower()));
+        }
 
-    public Task<User?> GetByIdAsync(int id)
+        IEnumerable<User> result = await usersQuery.ToListAsync();
+        return result;
+    }
+    public async Task<User?> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        User? user = await context.Users.FindAsync(id);
+        return user;
     }
 }

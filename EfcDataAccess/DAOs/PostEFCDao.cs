@@ -1,6 +1,7 @@
 using Application.I_DAO;
 using Domain.DTOs;
 using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace EfcDataAccess.DAOs;
@@ -25,9 +26,16 @@ public class PostEFCDao : IPostDao
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto dto)
+    public async Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
     {
-        throw new NotImplementedException();
+        IQueryable<Post> postsQuery = context.Posts.AsQueryable();
+        if (searchParameters.titleContains != null)
+        {
+            postsQuery = postsQuery.Where(p => p.Title.ToLower().Contains(searchParameters.titleContains.ToLower()));
+        }
+
+        IEnumerable<Post> result = await postsQuery.ToListAsync();
+        return result;
     }
 
     public Task UpdateAsync(Post post)

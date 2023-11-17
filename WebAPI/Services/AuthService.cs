@@ -1,13 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using Domain.Models;
-using FileData;
-using FileData.DAOs;
+using EfcDataAccess;
+using EfcDataAccess.DAOs;
 
 namespace WebAPI.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly UserFileDao users = new(new FileContext());
+    private readonly UserEFCDao users = new(new ReaditContext());
 
     public Task<User> ValidateUser(string username, string password)
     {
