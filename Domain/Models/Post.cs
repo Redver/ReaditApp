@@ -15,7 +15,7 @@ public class Post
         Comments = comments;
     }
     
-    public Post(int id, string? title, User author, string content)
+    public Post(string? title, int authorId, string content, DateTime postDate)
     {
         Title = title;
         AuthorId = authorId;
