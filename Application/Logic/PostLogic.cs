@@ -19,7 +19,7 @@ public class PostLogic : IPostLogic
         var toCreate = new Post
         {
             Title = post.Title,
-            Author = post.Author,
+            AuthorId = post.Author.Id,
             Content = post.Content,
             PostDate = DateTime.Now
         };

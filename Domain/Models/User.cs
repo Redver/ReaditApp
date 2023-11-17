@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Domain.Models;
 
@@ -9,7 +10,8 @@ public class User
     [Key]
     public int Id { get; set; }
     public int? Coins { get; set; }
-    public ICollection<Post> Posts { get; set; }
+    [JsonIgnore]
+    public ICollection<Post>? Posts { get; set; }
     
     public User(){}
 }
