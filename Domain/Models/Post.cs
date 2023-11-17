@@ -17,15 +17,24 @@ public class Post
     
     public Post(int id, string? title, User author, string content)
     {
-        Id = id;
         Title = title;
-        Author = author;
+        AuthorId = authorId;
+        Content = content;
+        PostDate = postDate;
+    }
+    
+    public Post(string? title, int authorId, string content)
+    {
+        Title = title;
+        AuthorId = authorId;
         Content = content;
     }
+    
 
-    public Post()
+    private Post()
     {
     }
+    
 
     [Key]
     public int Id { get; set; }

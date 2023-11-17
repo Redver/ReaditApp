@@ -25,19 +25,34 @@ public class PostEFCDao : IPostDao
     {
         throw new NotImplementedException();
     }
+    
 
     public async Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
     {
-        IQueryable<Post> postsQuery = context.Posts.AsQueryable();
-        if (searchParameters.titleContains != null)
+        IQueryable<Post> query = context.Posts.Include(post => post.Author).AsQueryable();
+    
+        if (!string.IsNullOrEmpty(searchParameters.username))
         {
-            postsQuery = postsQuery.Where(p => p.Title.ToLower().Contains(searchParameters.titleContains.ToLower()));
+            // we know username is unique, so just fetch the first
+            query = query.Where(post =>
+                post.Author.UserName.ToLower().Equals(searchParameters.username.ToLower()));
+        }
+    
+        if (searchParameters.id != null)
+        {
+            query = query.Where(t => t.Author.Id == searchParameters.id);
+        }
+        
+        if (!string.IsNullOrEmpty(searchParameters.titleContains))
+        {
+            query = query.Where(t =>
+                t.Title.ToLower().Contains(searchParameters.titleContains.ToLower()));
         }
 
-        IEnumerable<Post> result = await postsQuery.ToListAsync();
+        List<Post> result = await query.ToListAsync();
         return result;
     }
-
+    
     public Task UpdateAsync(Post post)
     {
         throw new NotImplementedException();

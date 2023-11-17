@@ -16,13 +16,7 @@ public class PostLogic : IPostLogic
 
     public async Task<Post> CreatePostAsync(PostCreateDto post)
     {
-        var toCreate = new Post
-        {
-            Title = post.Title,
-            AuthorId = post.Author.Id,
-            Content = post.Content,
-            PostDate = DateTime.Now
-        };
+        var toCreate = new Post(post.Title, post.Author.Id, post.Content, DateTime.Now);
         var created = await postDao.CreateAsync(toCreate);
         return created;
     }
@@ -45,11 +39,11 @@ public class PostLogic : IPostLogic
 
         IEnumerable<Post> toUpdate = await postDao.GetAsync(postSearchParameter);
         
-        Post newComment = new Post(postUpdateDto.PostId, null, postUpdateDto.Commenter, postUpdateDto.Comment);
+       // Post newComment = new Post(postUpdateDto.PostId, null, postUpdateDto.Commenter, postUpdateDto.Comment);
 
         Post postToUpdate = toUpdate.First();
         
-        postToUpdate.Comments.Add(newComment);
+       // postToUpdate.Comments.Add(newComment);
         
         await postDao.UpdateAsync(postToUpdate);
     }
