@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service" kind="class" language="C#" prot="public">
+    <compoundname>BlazorWasm::Services::Http::JwtAuthService</compoundname>
+    <basecompoundref refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service" prot="public" virt="non-virtual">BlazorWasm.Services.IAuthService</basecompoundref>
+    <basecompoundref refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service" prot="public" virt="non-virtual">BlazorWasm.Services.IAuthService</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a53196249666ac9bb37f855df5d417289" prot="private" static="no" mutable="no">
+        <type>readonly HttpClient</type>
+        <definition>readonly HttpClient BlazorWasm.Services.Http.JwtAuthService::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.client</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="11" column="33" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1afc1a131ef51dd92a9963ffbe192a626b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>? string</type>
+        <definition>static string BlazorWasm.Services.Http.JwtAuthService::Jwt</definition>
+        <argsstring></argsstring>
+        <name>Jwt</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.Jwt</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="14" column="26" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a98377fddde61ef759fbc2d91c75936f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Action&lt; ClaimsPrincipal &gt;</type>
+        <definition>Action&lt; ClaimsPrincipal &gt; BlazorWasm.Services.Http.JwtAuthService::OnAuthStateChanged</definition>
+        <argsstring></argsstring>
+        <name>OnAuthStateChanged</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.OnAuthStateChanged</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a27ac0caa1096eb76bcc41694a384eac3">OnAuthStateChanged</reimplements>
+        <initializer>= null!</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="74" column="19" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="74" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.JwtAuthService.LoginAsync</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>LoginAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.LoginAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a5b08fd4a65147068772bc072ac380937">LoginAsync</reimplements>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="16" column="23" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="16" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1ae48199da6f7065eb933c59de03618ebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.JwtAuthService.LogoutAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LogoutAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.LogoutAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1aa38ffa1c5fa5051f77c5a92aa653ddc0">LogoutAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="40" column="23" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a5e5f2bb4e78c7fcc172ecdd669a9d3b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.JwtAuthService.RegisterAsync</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>RegisterAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.RegisterAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a14f8e44a06ff19f0df91b2286a0adb2b">RegisterAsync</reimplements>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="48" column="23" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="48" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; ClaimsPrincipal &gt;</type>
+        <definition>Task&lt; ClaimsPrincipal &gt; BlazorWasm.Services.Http.JwtAuthService.GetAuthAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.GetAuthAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a1de71a2adaa2ffed0ff859162bd6d750">GetAuthAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="67" column="17" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.JwtAuthService.LoginAsync</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>LoginAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.LoginAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a5b08fd4a65147068772bc072ac380937">LoginAsync</reimplements>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="16" column="23" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="16" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a1f9c1c5d68a41485a9f947ca593b5377" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task BlazorWasm.Services.Http.JwtAuthService.LogoutAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LogoutAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.LogoutAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1aa38ffa1c5fa5051f77c5a92aa653ddc0">LogoutAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="43" column="17" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a0d57124f1227ce6491229e58825aaf94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task BlazorWasm.Services.Http.JwtAuthService.RegisterAsync</definition>
+        <argsstring>(User user)</argsstring>
+        <name>RegisterAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.RegisterAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a49bb437885269e52231455b483474d9e">RegisterAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="48" column="17" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; ClaimsPrincipal &gt;</type>
+        <definition>Task&lt; ClaimsPrincipal &gt; BlazorWasm.Services.Http.JwtAuthService.GetAuthAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.GetAuthAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a1de71a2adaa2ffed0ff859162bd6d750">GetAuthAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="53" column="17" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Claim &gt;</type>
+        <definition>static IEnumerable&lt; Claim &gt; BlazorWasm.Services.Http.JwtAuthService.ParseClaimsFromJwt</definition>
+        <argsstring>(string jwt)</argsstring>
+        <name>ParseClaimsFromJwt</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.ParseClaimsFromJwt</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="76" column="32" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>static byte[] BlazorWasm.Services.Http.JwtAuthService.ParseBase64WithoutPadding</definition>
+        <argsstring>(string base64)</argsstring>
+        <name>ParseBase64WithoutPadding</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.ParseBase64WithoutPadding</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>base64</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="84" column="25" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="84" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ClaimsPrincipal</type>
+        <definition>static ClaimsPrincipal BlazorWasm.Services.Http.JwtAuthService.CreateClaimsPrincipal</definition>
+        <argsstring>()</argsstring>
+        <name>CreateClaimsPrincipal</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.CreateClaimsPrincipal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="99" column="36" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="99" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Claim &gt;</type>
+        <definition>static IEnumerable&lt; Claim &gt; BlazorWasm.Services.Http.JwtAuthService.ParseClaimsFromJwt</definition>
+        <argsstring>(string jwt)</argsstring>
+        <name>ParseClaimsFromJwt</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.ParseClaimsFromJwt</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="59" column="32" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="59" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>static byte[] BlazorWasm.Services.Http.JwtAuthService.ParseBase64WithoutPadding</definition>
+        <argsstring>(string base64)</argsstring>
+        <name>ParseBase64WithoutPadding</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.ParseBase64WithoutPadding</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>base64</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="67" column="25" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ClaimsPrincipal</type>
+        <definition>static ClaimsPrincipal BlazorWasm.Services.Http.JwtAuthService.CreateClaimsPrincipal</definition>
+        <argsstring>()</argsstring>
+        <name>CreateClaimsPrincipal</name>
+        <qualifiedname>BlazorWasm.Services.Http.JwtAuthService.CreateClaimsPrincipal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/BlazorWasm/Services/Http/JwtAuthService.cs" line="82" column="36" bodyfile="folder/BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="82" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlazorWasm.Services.Http.JwtAuthService</label>
+        <link refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthService</label>
+        <link refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BlazorWasm.Services.Http.JwtAuthService</label>
+        <link refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthService</label>
+        <link refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="9" column="7" bodyfile="BlazorWasm/Services/Http/JwtAuthService.cs" bodystart="10" bodyend="110"/>
+    <listofallmembers>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a53196249666ac9bb37f855df5d417289" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>client</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>CreateClaimsPrincipal</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>CreateClaimsPrincipal</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>GetAuthAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>GetAuthAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1afc1a131ef51dd92a9963ffbe192a626b" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>Jwt</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>LoginAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>LoginAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1ae48199da6f7065eb933c59de03618ebe" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>LogoutAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a1f9c1c5d68a41485a9f947ca593b5377" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>LogoutAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a98377fddde61ef759fbc2d91c75936f8" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>OnAuthStateChanged</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>ParseBase64WithoutPadding</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>ParseBase64WithoutPadding</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>ParseClaimsFromJwt</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>ParseClaimsFromJwt</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a5e5f2bb4e78c7fcc172ecdd669a9d3b1" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>RegisterAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a0d57124f1227ce6491229e58825aaf94" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::JwtAuthService</scope><name>RegisterAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

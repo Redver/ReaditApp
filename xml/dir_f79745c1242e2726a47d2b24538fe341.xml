@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_f79745c1242e2726a47d2b24538fe341" kind="dir">
+    <compoundname>Domain/Auths</compoundname>
+    <innerfile refid="_authorisation_policies_8cs">AuthorisationPolicies.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/Auths/"/>
+  </compounddef>
+</doxygen>

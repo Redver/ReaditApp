@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['password_0',['password',['../class_domain_1_1_models_1_1_user.html#a60822fb40e5f2f276c28de248cc96437',1,'Domain.Models.User.PassWord'],['../class_domain_1_1_d_t_os_1_1_user_create_dto.html#a67fdc98ff51860966a65ac21fa75e409',1,'Domain.DTOs.UserCreateDto.Password'],['../class_domain_1_1_d_t_os_1_1_user_login_dto.html#ab43daf04eadac82b512ad374fafc4ee7',1,'Domain.DTOs.UserLoginDto.Password']]],
+  ['patchasync_1',['PatchAsync',['../class_web_a_p_i_1_1_controllers_1_1_post_controller.html#abe96907ffb852827dedd23db977fb277',1,'WebAPI::Controllers::PostController']]],
+  ['post_2',['post',['../class_domain_1_1_models_1_1_post.html',1,'Domain.Models.Post'],['../class_domain_1_1_models_1_1_post.html#a2a8830d7eba2fe4769e801c9ec466586',1,'Domain.Models.Post.Post()'],['../class_domain_1_1_models_1_1_post.html#aa4369b916ed4c41c038d949ea97940a7',1,'Domain.Models.Post.Post(int? id, string? title, string author, string content)'],['../class_domain_1_1_models_1_1_post.html#ad6857ee737c92f2a349c313b60efee2b',1,'Domain.Models.Post.Post(int? id, string? title, string author, string content, DateTime postDate, List&lt; Post &gt;? comments)']]],
+  ['post_2ecs_3',['Post.cs',['../_post_8cs.html',1,'']]],
+  ['postauthor_4',['PostAuthor',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#a6bb553f30a0ecc154fed051ea0280ea7',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postbody_5',['PostBody',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#ae6a14441c3915373fbdae3e5b0a8f1f8',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postcomments_6',['PostComments',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#a311cf10683121b24eafe90cdf53a1a6c',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postcontroller_7',['postcontroller',['../class_web_a_p_i_1_1_controllers_1_1_post_controller.html',1,'WebAPI.Controllers.PostController'],['../class_web_a_p_i_1_1_controllers_1_1_post_controller.html#a65583e77e2a9a322881a74ef338ea0e1',1,'WebAPI.Controllers.PostController.PostController(IPostLogic postLogic)'],['../class_web_a_p_i_1_1_controllers_1_1_post_controller.html#a65583e77e2a9a322881a74ef338ea0e1',1,'WebAPI.Controllers.PostController.PostController(IPostLogic postLogic)']]],
+  ['postcontroller_2ecs_8',['postcontroller.cs',['../folder_2_web_a_p_i_2_controllers_2_post_controller_8cs.html',1,'(Global Namespace)'],['../_web_a_p_i_2_controllers_2_post_controller_8cs.html',1,'(Global Namespace)']]],
+  ['postcreatedto_9',['postcreatedto',['../class_domain_1_1_d_t_os_1_1_post_create_dto.html',1,'Domain.DTOs.PostCreateDto'],['../class_domain_1_1_d_t_os_1_1_post_create_dto.html#a77cd5d6c86deaa46ace18e7fb74e3484',1,'Domain.DTOs.PostCreateDto.PostCreateDto()']]],
+  ['postcreatedto_2ecs_10',['PostCreateDto.cs',['../_post_create_dto_8cs.html',1,'']]],
+  ['postdate_11',['PostDate',['../class_domain_1_1_models_1_1_post.html#afcc45b392d236752b345d7336fc1c271',1,'Domain::Models::Post']]],
+  ['postdatetime_12',['PostDateTime',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#af61fe7c75c25b9eae2afcb077cd2cc62',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postfiledao_13',['postfiledao',['../class_file_data_1_1_d_a_os_1_1_post_file_dao.html',1,'FileData.DAOs.PostFileDao'],['../class_file_data_1_1_d_a_os_1_1_post_file_dao.html#ab9cbcb67cbfd1c6efe43cac4c6562314',1,'FileData.DAOs.PostFileDao.PostFileDao()']]],
+  ['postfiledao_2ecs_14',['PostFileDao.cs',['../_post_file_dao_8cs.html',1,'']]],
+  ['postid_15',['PostId',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#a463800007718142b93cf22e66e398e08',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postlogic_16',['postlogic',['../class_application_1_1_logic_1_1_post_logic.html',1,'Application.Logic.PostLogic'],['../class_application_1_1_logic_1_1_post_logic.html#aed93a7ebc46bd5958c181f7dee94bd0d',1,'Application.Logic.PostLogic.PostLogic()']]],
+  ['postlogic_2ecs_17',['PostLogic.cs',['../_post_logic_8cs.html',1,'']]],
+  ['posts_18',['posts',['../class_file_data_1_1_data_container.html#a2cae924c303c25a57bc317307af99047',1,'FileData.DataContainer.Posts'],['../class_file_data_1_1_file_context.html#ac82a4497abc65e7f5baf7057bb467b59',1,'FileData.FileContext.Posts']]],
+  ['postservice_19',['postservice',['../class_blazor_wasm_1_1_services_1_1_http_1_1_post_service.html',1,'BlazorWasm.Services.Http.PostService'],['../class_blazor_wasm_1_1_services_1_1_http_1_1_post_service.html#a6273efc6abcfa129fed03d47b3c31f0c',1,'BlazorWasm.Services.Http.PostService.PostService()']]],
+  ['postservice_2ecs_20',['PostService.cs',['../_post_service_8cs.html',1,'']]],
+  ['posttitle_21',['PostTitle',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#aa414cb1adda462f192aaf1333f81fb21',1,'Domain::DTOs::PostUpdateDto']]],
+  ['postupdatedto_22',['postupdatedto',['../class_domain_1_1_d_t_os_1_1_post_update_dto.html',1,'Domain.DTOs.PostUpdateDto'],['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#a9029ca420121104ab31268e8499dee27',1,'Domain.DTOs.PostUpdateDto.PostUpdateDto(int? postId, string? postAuthor, string? postTitle, string? postBody, DateTime? postDateTime, string? commenter, string? comment, List&lt; Post &gt;? postComments)'],['../class_domain_1_1_d_t_os_1_1_post_update_dto.html#a91f434f5a0433c9d52e29580ed7b7550',1,'Domain.DTOs.PostUpdateDto.PostUpdateDto()']]],
+  ['postupdatedto_2ecs_23',['PostUpdateDto.cs',['../_post_update_dto_8cs.html',1,'']]],
+  ['program_2ecs_24',['program.cs',['../_web_a_p_i_2_program_8cs.html',1,'(Global Namespace)'],['../folder_2_web_a_p_i_2_program_8cs.html',1,'(Global Namespace)'],['../folder_2_blazor_wasm_2_program_8cs.html',1,'(Global Namespace)'],['../_blazor_wasm_2_program_8cs.html',1,'(Global Namespace)']]]
+];

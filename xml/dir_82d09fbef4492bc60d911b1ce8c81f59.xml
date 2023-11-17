@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_82d09fbef4492bc60d911b1ce8c81f59" kind="dir">
+    <compoundname>folder/BlazorWasm/Auth</compoundname>
+    <innerfile refid="folder_2_blazor_wasm_2_auth_2_custom_auth_provider_8cs">CustomAuthProvider.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/BlazorWasm/Auth/"/>
+  </compounddef>
+</doxygen>

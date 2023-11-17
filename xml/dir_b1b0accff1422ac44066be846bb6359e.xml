@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_b1b0accff1422ac44066be846bb6359e" kind="dir">
+    <compoundname>folder/WebAPI</compoundname>
+    <innerdir refid="dir_4a56e95a352f8dd7c832f7f8af1602ab">folder/WebAPI/Controllers</innerdir>
+    <innerdir refid="dir_236e44dfc7e8ec1110dc36263165e5e8">folder/WebAPI/Services</innerdir>
+    <innerfile refid="folder_2_web_a_p_i_2_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/WebAPI/"/>
+  </compounddef>
+</doxygen>

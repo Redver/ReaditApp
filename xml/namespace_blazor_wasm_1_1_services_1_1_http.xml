@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_blazor_wasm_1_1_services_1_1_http" kind="namespace" language="C#">
+    <compoundname>BlazorWasm::Services::Http</compoundname>
+    <innerclass refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service" prot="public">BlazorWasm::Services::Http::JwtAuthService</innerclass>
+    <innerclass refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service" prot="public">BlazorWasm::Services::Http::PostService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BlazorWasm/Services/Http/JwtAuthService.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

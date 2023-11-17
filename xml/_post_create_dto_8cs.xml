@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_post_create_dto_8cs" kind="file" language="C#">
+    <compoundname>PostCreateDto.cs</compoundname>
+    <innerclass refid="class_domain_1_1_d_t_os_1_1_post_create_dto" prot="public">Domain::DTOs::PostCreateDto</innerclass>
+    <innernamespace refid="namespace_domain">Domain</innernamespace>
+    <innernamespace refid="namespace_domain_1_1_d_t_os">Domain::DTOs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_domain_1_1_d_t_os" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_d_t_os" kindref="compound">Domain.DTOs</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_domain_1_1_d_t_os_1_1_post_create_dto" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>title,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>author,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>content)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a7ddb836abf2bdef46b0df35451270972" kindref="member">Title</ref><sp/>=<sp/>title;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1acfb81a18a3d346d05ad393a2dd68ba27" kindref="member">Author</ref><sp/>=<sp/>author;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1ac9edaae02451978d9ad2de21ede8fb58" kindref="member">Content</ref><sp/>=<sp/>content;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">?<sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a7ddb836abf2bdef46b0df35451270972" kindref="member">Title</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1acfb81a18a3d346d05ad393a2dd68ba27" kindref="member">Author</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1ac9edaae02451978d9ad2de21ede8fb58" kindref="member">Content</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Domain/DTOs/PostCreateDto.cs"/>
+  </compounddef>
+</doxygen>

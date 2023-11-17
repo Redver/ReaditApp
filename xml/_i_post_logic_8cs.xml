@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_i_post_logic_8cs" kind="file" language="C#">
+    <compoundname>IPostLogic.cs</compoundname>
+    <innerclass refid="interface_application_1_1_i___logic_1_1_i_post_logic" prot="public">Application::I_Logic::IPostLogic</innerclass>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <innernamespace refid="namespace_application_1_1_i___logic">Application::I_Logic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_d_t_os" kindref="compound">Domain.DTOs</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_models" kindref="compound">Domain.Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespace_application_1_1_i___logic" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application_1_1_i___logic" kindref="compound">Application.I_Logic</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="interface_application_1_1_i___logic_1_1_i_post_logic" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic" kindref="compound">IPostLogic</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;Post&gt;<sp/><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a09ff5444ca650f255af6aaeab5f095c5" kindref="member">CreatePostAsync</ref>(<ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref><sp/>postCreateDto);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;IEnumerable&lt;Post&gt;&gt;<sp/><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a00c4c701feb98fb4f02d2cdc84644e20" kindref="member">GetAllPostsAsync</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;IEnumerable&lt;Post&gt;&gt;<sp/><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a4e27744c17e98286621664c48fe9b240" kindref="member">GetAsync</ref>(<ref refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto" kindref="compound">SearchPostParametersDto</ref><sp/>dto);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>Task<sp/><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a86f26e5ae1bb7ff522de78140da72f90" kindref="member">UpdatePostAsync</ref>(<ref refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kindref="compound">PostUpdateDto</ref><sp/>dto);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Application/I-Logic/IPostLogic.cs"/>
+  </compounddef>
+</doxygen>

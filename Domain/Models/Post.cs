@@ -1,9 +1,11 @@
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Domain.Models;
 
 public class Post
 {
-    public Post(int? id, string? title, string author, string content, DateTime postDate, List<Post>? comments)
+    public Post(int id, string? title, User author, string content, DateTime postDate, List<Post>? comments)
     {
         Id = id;
         Title = title;
@@ -13,7 +15,7 @@ public class Post
         Comments = comments;
     }
     
-    public Post(int? id, string? title, string author, string content)
+    public Post(int id, string? title, User author, string content)
     {
         Id = id;
         Title = title;
@@ -25,9 +27,10 @@ public class Post
     {
     }
 
-    public int? Id { get; set; }
+    [Key]
+    public int Id { get; set; }
     public string? Title { get; set; }
-    public string Author { get; set; }
+    public User Author { get; set; }
     public string Content { get; set; }
     public DateTime PostDate { get; set; }
     public int Score { get; set; }

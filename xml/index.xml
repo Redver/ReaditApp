@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller" kind="class"><name>WebAPI::Controllers::AuthController</name>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ae3b8bdf402aa7e6323d4b8754d5c8813" kind="variable"><name>config</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ac8601f4c55189717f2adec3e4e66934c" kind="variable"><name>authService</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ac93715207e115bcf5498a40c6348872e" kind="function"><name>AuthController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a74aa20f1bb2b0a8b1f241ddf10dea281" kind="function"><name>Login</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ac93715207e115bcf5498a40c6348872e" kind="function"><name>AuthController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a74aa20f1bb2b0a8b1f241ddf10dea281" kind="function"><name>Login</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a16eddcbd176e10d6a5aa2a66f31983c8" kind="function"><name>GenerateClaims</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a5ae17ffbc053e09d0ae40dfd648f068d" kind="function"><name>GenerateJwt</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a16eddcbd176e10d6a5aa2a66f31983c8" kind="function"><name>GenerateClaims</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a5ae17ffbc053e09d0ae40dfd648f068d" kind="function"><name>GenerateJwt</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_auths_1_1_authorisation_policies" kind="class"><name>Domain::Auths::AuthorisationPolicies</name>
+    <member refid="class_domain_1_1_auths_1_1_authorisation_policies_1ab1a51c8f543acc7cbcc252f416aca8d2" kind="function"><name>AddPolicies</name></member>
+  </compound>
+  <compound refid="class_web_a_p_i_1_1_services_1_1_auth_service" kind="class"><name>WebAPI::Services::AuthService</name>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1a380495057ac9cbcad5b5908cccb7baa8" kind="variable"><name>users</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1a11cc596d05af0cb955ac3a0a9b71cfdd" kind="variable"><name>users</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1abee3e2df042b7aaeda0f7794439dcbb8" kind="function"><name>ValidateUser</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1aebd93ff8321dcfff6308c30c41536759" kind="function"><name>GetUser</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1ae549647210b7bd57493aac22c18a01b4" kind="function"><name>RegisterUser</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1abee3e2df042b7aaeda0f7794439dcbb8" kind="function"><name>ValidateUser</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1aebd93ff8321dcfff6308c30c41536759" kind="function"><name>GetUser</name></member>
+    <member refid="class_web_a_p_i_1_1_services_1_1_auth_service_1ae549647210b7bd57493aac22c18a01b4" kind="function"><name>RegisterUser</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_class1" kind="class"><name>Shared::Class1</name>
+  </compound>
+  <compound refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider" kind="class"><name>BlazorWasm::Auth::CustomAuthProvider</name>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1aeb8afcd487b8b7f090d859a633cdf3de" kind="variable"><name>authService</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1a921b5346dab195c48004d6f0d6f09fb7" kind="function"><name>CustomAuthProvider</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1ac983ca57fa38e3a52b0fdc6a55d9e4c5" kind="function"><name>GetAuthenticationStateAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1a921b5346dab195c48004d6f0d6f09fb7" kind="function"><name>CustomAuthProvider</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1ac983ca57fa38e3a52b0fdc6a55d9e4c5" kind="function"><name>GetAuthenticationStateAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1acb7d0c3a6b2e9f58795f54cdc3d3bae9" kind="function"><name>AuthStateChanged</name></member>
+    <member refid="class_blazor_wasm_1_1_auth_1_1_custom_auth_provider_1acb7d0c3a6b2e9f58795f54cdc3d3bae9" kind="function"><name>AuthStateChanged</name></member>
+  </compound>
+  <compound refid="class_file_data_1_1_data_container" kind="class"><name>FileData::DataContainer</name>
+    <member refid="class_file_data_1_1_data_container_1a90500aff6fc3ccb32d4f9c3297d9183f" kind="property"><name>Users</name></member>
+    <member refid="class_file_data_1_1_data_container_1a2cae924c303c25a57bc317307af99047" kind="property"><name>Posts</name></member>
+  </compound>
+  <compound refid="class_file_data_1_1_file_context" kind="class"><name>FileData::FileContext</name>
+    <member refid="class_file_data_1_1_file_context_1ad94ece3417c7a47bafbd256b313372b4" kind="variable"><name>filePath</name></member>
+    <member refid="class_file_data_1_1_file_context_1a27792f4ac237693dd9dfeba43b0f4846" kind="variable"><name>dataContainer</name></member>
+    <member refid="class_file_data_1_1_file_context_1ac82a4497abc65e7f5baf7057bb467b59" kind="property"><name>Posts</name></member>
+    <member refid="class_file_data_1_1_file_context_1ac1aaa7d16cc170aa95a1d3b7d9ff0941" kind="property"><name>Users</name></member>
+    <member refid="class_file_data_1_1_file_context_1a40df36388de1a8c33c1adf406476a524" kind="function"><name>LoadData</name></member>
+    <member refid="class_file_data_1_1_file_context_1ad1d94fa4996c44109f6883a8923eed35" kind="function"><name>SaveChanges</name></member>
+  </compound>
+  <compound refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service" kind="interface"><name>BlazorWasm::Services::IAuthService</name>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a27ac0caa1096eb76bcc41694a384eac3" kind="property"><name>OnAuthStateChanged</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a5b08fd4a65147068772bc072ac380937" kind="function"><name>LoginAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1aa38ffa1c5fa5051f77c5a92aa653ddc0" kind="function"><name>LogoutAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a14f8e44a06ff19f0df91b2286a0adb2b" kind="function"><name>RegisterAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a1de71a2adaa2ffed0ff859162bd6d750" kind="function"><name>GetAuthAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a5b08fd4a65147068772bc072ac380937" kind="function"><name>LoginAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1aa38ffa1c5fa5051f77c5a92aa653ddc0" kind="function"><name>LogoutAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a49bb437885269e52231455b483474d9e" kind="function"><name>RegisterAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_auth_service_1a1de71a2adaa2ffed0ff859162bd6d750" kind="function"><name>GetAuthAsync</name></member>
+  </compound>
+  <compound refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service" kind="interface"><name>WebAPI::Services::IAuthService</name>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1abbd8bd78f134c2e050082b74fcaf85ca" kind="function"><name>GetUser</name></member>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1a297eabf174b2bc9e116966fc94c3a6f5" kind="function"><name>RegisterUser</name></member>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1a7111915bdbc3bc239cf93d6c97fe52df" kind="function"><name>ValidateUser</name></member>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1abbd8bd78f134c2e050082b74fcaf85ca" kind="function"><name>GetUser</name></member>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1a297eabf174b2bc9e116966fc94c3a6f5" kind="function"><name>RegisterUser</name></member>
+    <member refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service_1a7111915bdbc3bc239cf93d6c97fe52df" kind="function"><name>ValidateUser</name></member>
+  </compound>
+  <compound refid="interface_application_1_1_i___d_a_o_1_1_i_post_dao" kind="interface"><name>Application::I_DAO::IPostDao</name>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_post_dao_1a6f3cf58f847e1a17fb237c9046af303f" kind="function"><name>CreateAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_post_dao_1ad53a3f01101657ebd8895f5d4d2f596e" kind="function"><name>GetAllAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_post_dao_1a5b6bd2c38f7fb0dea96c13ca50efeb6c" kind="function"><name>GetAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_post_dao_1a4ae9981a0e0136bf5dfd54a6551218c9" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="interface_application_1_1_i___logic_1_1_i_post_logic" kind="interface"><name>Application::I_Logic::IPostLogic</name>
+    <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a09ff5444ca650f255af6aaeab5f095c5" kind="function"><name>CreatePostAsync</name></member>
+    <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a00c4c701feb98fb4f02d2cdc84644e20" kind="function"><name>GetAllPostsAsync</name></member>
+    <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a4e27744c17e98286621664c48fe9b240" kind="function"><name>GetAsync</name></member>
+    <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a86f26e5ae1bb7ff522de78140da72f90" kind="function"><name>UpdatePostAsync</name></member>
+  </compound>
+  <compound refid="interface_blazor_wasm_1_1_services_1_1_i_post_service" kind="interface"><name>BlazorWasm::Services::IPostService</name>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa09ced0befc0b2c7c74adb6f47c3e525" kind="function"><name>GetAllAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa74075c367c223cf64081fafeda71d08" kind="function"><name>CreateAsync</name></member>
+    <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1a6cf8a77e202454bba1b9ff24b56d0d11" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="interface_application_1_1_i___d_a_o_1_1_i_user_dao" kind="interface"><name>Application::I_DAO::IUserDao</name>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_user_dao_1a90e6eb72814e86eab9ef48855b54181b" kind="function"><name>CreateAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_user_dao_1a7f1488717681405090745873f3915f08" kind="function"><name>GetByUsernameAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_user_dao_1a3c51fe874b5fe0a451be76d1c2eefb28" kind="function"><name>GetAsync</name></member>
+    <member refid="interface_application_1_1_i___d_a_o_1_1_i_user_dao_1acef6f36a28cd327cd8ed56b25709b7c9" kind="function"><name>GetByIdAsync</name></member>
+  </compound>
+  <compound refid="interface_application_1_1_i___logic_1_1_i_user_logic" kind="interface"><name>Application::I_Logic::IUserLogic</name>
+    <member refid="interface_application_1_1_i___logic_1_1_i_user_logic_1ae17e834dc67f404171376d1aa640d79c" kind="function"><name>CreateUserAsync</name></member>
+    <member refid="interface_application_1_1_i___logic_1_1_i_user_logic_1ab9a979945db16c109c49e6a2647613d6" kind="function"><name>GetAsync</name></member>
+  </compound>
+  <compound refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service" kind="class"><name>BlazorWasm::Services::Http::JwtAuthService</name>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a53196249666ac9bb37f855df5d417289" kind="variable"><name>client</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1afc1a131ef51dd92a9963ffbe192a626b" kind="property"><name>Jwt</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a98377fddde61ef759fbc2d91c75936f8" kind="property"><name>OnAuthStateChanged</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" kind="function"><name>LoginAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1ae48199da6f7065eb933c59de03618ebe" kind="function"><name>LogoutAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a5e5f2bb4e78c7fcc172ecdd669a9d3b1" kind="function"><name>RegisterAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" kind="function"><name>GetAuthAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a7bc2cd87ecd5f71c4487388ab84f486f" kind="function"><name>LoginAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a1f9c1c5d68a41485a9f947ca593b5377" kind="function"><name>LogoutAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a0d57124f1227ce6491229e58825aaf94" kind="function"><name>RegisterAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1aa8e6331481a4794a46dc1a15bd0d1266" kind="function"><name>GetAuthAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" kind="function"><name>ParseClaimsFromJwt</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" kind="function"><name>ParseBase64WithoutPadding</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" kind="function"><name>CreateClaimsPrincipal</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1af681292596402a961824604356a23625" kind="function"><name>ParseClaimsFromJwt</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1a57272bd3f30fe9a876abfd54982bc299" kind="function"><name>ParseBase64WithoutPadding</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_jwt_auth_service_1abddf8b405eeeb348a5308db14648a0c0" kind="function"><name>CreateClaimsPrincipal</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_models_1_1_post" kind="class"><name>Domain::Models::Post</name>
+    <member refid="class_domain_1_1_models_1_1_post_1aecb3322cf97d8603eac165362540d0db" kind="property"><name>Id</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1abf670da832909e58d6d9602bca6c3ae5" kind="property"><name>Title</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1a190a37d1cec970c270bcd1acedf0c3c6" kind="property"><name>Author</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1aecf3d1fa5a436a6519ca6e8e0adad1aa" kind="property"><name>Content</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1afcc45b392d236752b345d7336fc1c271" kind="property"><name>PostDate</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1a55e04333ff6e053ce209d124bbcfd966" kind="property"><name>Score</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1a901e28af5f289c0b14bdebf2a2d2b1a7" kind="property"><name>Comments</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1ad6857ee737c92f2a349c313b60efee2b" kind="function"><name>Post</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1aa4369b916ed4c41c038d949ea97940a7" kind="function"><name>Post</name></member>
+    <member refid="class_domain_1_1_models_1_1_post_1a2a8830d7eba2fe4769e801c9ec466586" kind="function"><name>Post</name></member>
+  </compound>
+  <compound refid="class_web_a_p_i_1_1_controllers_1_1_post_controller" kind="class"><name>WebAPI::Controllers::PostController</name>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a80bd04ca9645c6cd250eac68d5879386" kind="variable"><name>postLogic</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" kind="function"><name>PostController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" kind="function"><name>GetAllAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" kind="function"><name>PostController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" kind="function"><name>GetAllAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abe96907ffb852827dedd23db977fb277" kind="function"><name>PatchAsync</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kind="class"><name>Domain::DTOs::PostCreateDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a7ddb836abf2bdef46b0df35451270972" kind="property"><name>Title</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1acfb81a18a3d346d05ad393a2dd68ba27" kind="property"><name>Author</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1ac9edaae02451978d9ad2de21ede8fb58" kind="property"><name>Content</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a77cd5d6c86deaa46ace18e7fb74e3484" kind="function"><name>PostCreateDto</name></member>
+  </compound>
+  <compound refid="class_file_data_1_1_d_a_os_1_1_post_file_dao" kind="class"><name>FileData::DAOs::PostFileDao</name>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1abad0d4df795cc13733931d5827a26e4f" kind="variable"><name>context</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1ab9cbcb67cbfd1c6efe43cac4c6562314" kind="function"><name>PostFileDao</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1accf375a8037290c09e6aac5bbc4af58c" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a0221ba36d273906ad11ed8509dfce79e" kind="function"><name>GetAllAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a087864d69c6305f4ad8ab162c0a0c863" kind="function"><name>GetAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a723cb2c078f1c3107bdd4714008cdbb6" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="class_application_1_1_logic_1_1_post_logic" kind="class"><name>Application::Logic::PostLogic</name>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1aad59d662ecf5e780be60f126529a0d03" kind="variable"><name>postDao</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1aed93a7ebc46bd5958c181f7dee94bd0d" kind="function"><name>PostLogic</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1a8692ea06e2b113291d7b364fbe27fca0" kind="function"><name>CreatePostAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1ac7bf616f0e2f29cc7188e5313dd5724e" kind="function"><name>GetAllPostsAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1a37e06f6c43a9a10d46d8cebaa3293f13" kind="function"><name>GetAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1a5d53e1e5b2a57ec05cf26b9f37bf44d5" kind="function"><name>UpdatePostAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1a2151fc258925ba1cdc3009b806ba911a" kind="function"><name>GetPostByIdAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_post_logic_1a604848c78700c659041718ca43c157c0" kind="function"><name>DeletePost</name></member>
+  </compound>
+  <compound refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service" kind="class"><name>BlazorWasm::Services::Http::PostService</name>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af6e2b0eed17aa6acb03a5e27c0dd7b9e" kind="variable"><name>client</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a6273efc6abcfa129fed03d47b3c31f0c" kind="function"><name>PostService</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a91571b857ff733fa20df3181a2dd6f9f" kind="function"><name>GetAllAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a1a3805585fb2c3161a68e3c112c36a00" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af770fbe5a5b1abf350088603cea8eed6" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kind="class"><name>Domain::DTOs::PostUpdateDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a463800007718142b93cf22e66e398e08" kind="property"><name>PostId</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7adf070428433d099ef201701e4368bc" kind="property"><name>Commenter</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7d7a3fe751a6c56081b38b8dc9db7548" kind="property"><name>Comment</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a6bb553f30a0ecc154fed051ea0280ea7" kind="property"><name>PostAuthor</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1aa414cb1adda462f192aaf1333f81fb21" kind="property"><name>PostTitle</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1ae6a14441c3915373fbdae3e5b0a8f1f8" kind="property"><name>PostBody</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1af61fe7c75c25b9eae2afcb077cd2cc62" kind="property"><name>PostDateTime</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a311cf10683121b24eafe90cdf53a1a6c" kind="property"><name>PostComments</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a9029ca420121104ab31268e8499dee27" kind="function"><name>PostUpdateDto</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a91f434f5a0433c9d52e29580ed7b7550" kind="function"><name>PostUpdateDto</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto" kind="class"><name>Domain::DTOs::SearchPostParametersDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto_1a64bd1860a064c123b49fc1d9eef5ef27" kind="property"><name>username</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto_1abe15aee4ccbc7f47b2b9e18478bbe3da" kind="property"><name>titleContains</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto_1a7146833fd210be74db025f69153a661e" kind="property"><name>bodyContains</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto_1a284b5faf5919278dc8938b0ccb74e965" kind="property"><name>id</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto_1a8a5dbca90b0a506fd40d16cf860dd556" kind="function"><name>SearchPostParametersDto</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto" kind="class"><name>Domain::DTOs::SearchUserParametersDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto_1a7db1392d3320588bf60f51ecf8746d24" kind="property"><name>UsernameContains</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto_1a89e827ce1aaae748d15bc4f830e5a64c" kind="function"><name>SearchUserParametersDto</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_models_1_1_user" kind="class"><name>Domain::Models::User</name>
+    <member refid="class_domain_1_1_models_1_1_user_1af3bbcde6a8e5f3e318c2bc8e277e5f84" kind="property"><name>UserName</name></member>
+    <member refid="class_domain_1_1_models_1_1_user_1a60822fb40e5f2f276c28de248cc96437" kind="property"><name>PassWord</name></member>
+    <member refid="class_domain_1_1_models_1_1_user_1a31f443ecb22b04d3d6b38fb322e12e58" kind="property"><name>Id</name></member>
+    <member refid="class_domain_1_1_models_1_1_user_1a3c0021dc20744c551796b61f67ca2c9a" kind="property"><name>Coins</name></member>
+  </compound>
+  <compound refid="class_web_a_p_i_1_1_controllers_1_1_user_controller" kind="class"><name>WebAPI::Controllers::UserController</name>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0b4a7607f5f20fe48b26f535deb88a3" kind="variable"><name>userLogic</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" kind="function"><name>UserController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" kind="function"><name>GetAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" kind="function"><name>UserController</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" kind="function"><name>GetAsync</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_user_create_dto" kind="class"><name>Domain::DTOs::UserCreateDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_user_create_dto_1adc20e5aa47fd0ec32c9ba3c51ea8af67" kind="property"><name>UserName</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_user_create_dto_1a67fdc98ff51860966a65ac21fa75e409" kind="property"><name>Password</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_user_create_dto_1a9181ff59e317b9ff4dd1939349fa8fd2" kind="function"><name>UserCreateDto</name></member>
+  </compound>
+  <compound refid="class_file_data_1_1_d_a_os_1_1_user_file_dao" kind="class"><name>FileData::DAOs::UserFileDao</name>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a8f32f13bafda6895d699010cc72be80c" kind="variable"><name>context</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a56b8038bd4ba5781b7c85aee495acda8" kind="function"><name>UserFileDao</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7a83fa2c4411346389a3511d4e0e58ee" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a70f1ef91a22e2ab69267e0f1cb21d1ef" kind="function"><name>GetByUsernameAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a2f3945e644d3d26d5e8d4b689857923e" kind="function"><name>GetAsync</name></member>
+    <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7164ccbbedbc59626d7c700a0a446fd3" kind="function"><name>GetByIdAsync</name></member>
+  </compound>
+  <compound refid="class_application_1_1_logic_1_1_user_logic" kind="class"><name>Application::Logic::UserLogic</name>
+    <member refid="class_application_1_1_logic_1_1_user_logic_1aacdca55810e5f8e58c43ff5abd6619ae" kind="variable"><name>_userDao</name></member>
+    <member refid="class_application_1_1_logic_1_1_user_logic_1a768a3a1f79e118f3db27d21598d6e1e0" kind="function"><name>UserLogic</name></member>
+    <member refid="class_application_1_1_logic_1_1_user_logic_1a3f0bcf6f27ea046227684da5e43dc8c3" kind="function"><name>CreateUserAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_user_logic_1a20049c4ccfef42269201442ff89474f7" kind="function"><name>GetAsync</name></member>
+    <member refid="class_application_1_1_logic_1_1_user_logic_1a9962a71e84b03a3c11c871570efb954e" kind="function"><name>ValidateData</name></member>
+  </compound>
+  <compound refid="class_domain_1_1_d_t_os_1_1_user_login_dto" kind="class"><name>Domain::DTOs::UserLoginDto</name>
+    <member refid="class_domain_1_1_d_t_os_1_1_user_login_dto_1afebd9a23d1a47c346f2bd3d1fcc3230d" kind="property"><name>Username</name></member>
+    <member refid="class_domain_1_1_d_t_os_1_1_user_login_dto_1ab43daf04eadac82b512ad374fafc4ee7" kind="property"><name>Password</name></member>
+  </compound>
+  <compound refid="namespace_application" kind="namespace"><name>Application</name>
+  </compound>
+  <compound refid="namespace_application_1_1_i___d_a_o" kind="namespace"><name>Application::I_DAO</name>
+  </compound>
+  <compound refid="namespace_application_1_1_i___logic" kind="namespace"><name>Application::I_Logic</name>
+  </compound>
+  <compound refid="namespace_application_1_1_logic" kind="namespace"><name>Application::Logic</name>
+  </compound>
+  <compound refid="namespace_blazor_wasm" kind="namespace"><name>BlazorWasm</name>
+  </compound>
+  <compound refid="namespace_blazor_wasm_1_1_auth" kind="namespace"><name>BlazorWasm::Auth</name>
+  </compound>
+  <compound refid="namespace_blazor_wasm_1_1_services" kind="namespace"><name>BlazorWasm::Services</name>
+  </compound>
+  <compound refid="namespace_blazor_wasm_1_1_services_1_1_http" kind="namespace"><name>BlazorWasm::Services::Http</name>
+  </compound>
+  <compound refid="namespace_domain" kind="namespace"><name>Domain</name>
+  </compound>
+  <compound refid="namespace_domain_1_1_auths" kind="namespace"><name>Domain::Auths</name>
+  </compound>
+  <compound refid="namespace_domain_1_1_d_t_os" kind="namespace"><name>Domain::DTOs</name>
+  </compound>
+  <compound refid="namespace_domain_1_1_models" kind="namespace"><name>Domain::Models</name>
+  </compound>
+  <compound refid="namespace_file_data" kind="namespace"><name>FileData</name>
+  </compound>
+  <compound refid="namespace_file_data_1_1_d_a_os" kind="namespace"><name>FileData::DAOs</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_jwt_registered_claim_names" kind="namespace"><name>JwtRegisteredClaimNames</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authentication_1_1_jwt_bearer" kind="namespace"><name>Microsoft::AspNetCore::Authentication::JwtBearer</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authorization" kind="namespace"><name>Microsoft::AspNetCore::Authorization</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_authorization" kind="namespace"><name>Microsoft::AspNetCore::Components::Authorization</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web" kind="namespace"><name>Microsoft::AspNetCore::Components::Web</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_hosting" kind="namespace"><name>Microsoft::AspNetCore::Components::WebAssembly::Hosting</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_http_1_1_http_results" kind="namespace"><name>Microsoft::AspNetCore::Http::HttpResults</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_json_patch" kind="namespace"><name>Microsoft::AspNetCore::JsonPatch</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc" kind="namespace"><name>Microsoft::AspNetCore::Mvc</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc_1_1_infrastructure" kind="namespace"><name>Microsoft::AspNetCore::Mvc::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_identity_model_1_1_tokens" kind="namespace"><name>Microsoft::IdentityModel::Tokens</name>
+  </compound>
+  <compound refid="namespace_shared" kind="namespace"><name>Shared</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations" kind="namespace"><name>System::ComponentModel::DataAnnotations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_identity_model_1_1_tokens_1_1_jwt" kind="namespace"><name>System::IdentityModel::Tokens::Jwt</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_http_1_1_headers" kind="namespace"><name>System::Net::Http::Headers</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services_1_1_java_script" kind="namespace"><name>System::Runtime::InteropServices::JavaScript</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_claims" kind="namespace"><name>System::Security::Claims</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_web_a_p_i" kind="namespace"><name>WebAPI</name>
+  </compound>
+  <compound refid="namespace_web_a_p_i_1_1_controllers" kind="namespace"><name>WebAPI::Controllers</name>
+  </compound>
+  <compound refid="namespace_web_a_p_i_1_1_services" kind="namespace"><name>WebAPI::Services</name>
+  </compound>
+  <compound refid="_i_post_dao_8cs" kind="file"><name>IPostDao.cs</name>
+  </compound>
+  <compound refid="_i_user_dao_8cs" kind="file"><name>IUserDao.cs</name>
+  </compound>
+  <compound refid="_i_post_logic_8cs" kind="file"><name>IPostLogic.cs</name>
+  </compound>
+  <compound refid="_i_user_logic_8cs" kind="file"><name>IUserLogic.cs</name>
+  </compound>
+  <compound refid="_post_logic_8cs" kind="file"><name>PostLogic.cs</name>
+  </compound>
+  <compound refid="_user_logic_8cs" kind="file"><name>UserLogic.cs</name>
+  </compound>
+  <compound refid="_application_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_domain_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_file_data_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_application_8_assembly_info_8cs" kind="file"><name>Application.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_application_8_global_usings_8g_8cs" kind="file"><name>Application.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_2_auth_2_custom_auth_provider_8cs" kind="file"><name>CustomAuthProvider.cs</name>
+  </compound>
+  <compound refid="folder_2_blazor_wasm_2_auth_2_custom_auth_provider_8cs" kind="file"><name>CustomAuthProvider.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_8_assembly_info_8cs" kind="file"><name>BlazorWasm.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_8_global_usings_8g_8cs" kind="file"><name>BlazorWasm.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_blazor_wasm_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" kind="function"><name>Add&lt; App &gt;</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" kind="function"><name>Add&lt; HeadOutlet &gt;</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1a1f1cce3f5474799a573735972fcfa9db" kind="function"><name>AddScoped&lt; AuthenticationStateProvider, CustomAuthProvider &gt;</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1ae14ea207d2637a339741660d3f70d58c" kind="function"><name>AddScoped&lt; IAuthService, JwtAuthService &gt;</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1a273f43b00dfa1fac791cf8cb583e4c9d" kind="function"><name>AddScoped&lt; IPostService, PostService &gt;</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1accaa45fdc01c3ac00a3e0edb7bb74532" kind="function"><name>AddPolicies</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1ad23e038402085511bf6d150f155199f9" kind="function"><name>AddScoped</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1a2ee5517a6d87cbc5d173f16e0cd11c01" kind="function"><name>AddAuthorizationCore</name></member>
+    <member refid="_blazor_wasm_2_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" kind="function"><name>Build</name></member>
+  </compound>
+  <compound refid="folder_2_blazor_wasm_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" kind="function"><name>Add&lt; App &gt;</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" kind="function"><name>Add&lt; HeadOutlet &gt;</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1ad23e038402085511bf6d150f155199f9" kind="function"><name>AddScoped</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1ae14ea207d2637a339741660d3f70d58c" kind="function"><name>AddScoped&lt; IAuthService, JwtAuthService &gt;</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1a1f1cce3f5474799a573735972fcfa9db" kind="function"><name>AddScoped&lt; AuthenticationStateProvider, CustomAuthProvider &gt;</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1accaa45fdc01c3ac00a3e0edb7bb74532" kind="function"><name>AddPolicies</name></member>
+    <member refid="folder_2_blazor_wasm_2_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" kind="function"><name>Build</name></member>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1abc3694a0e15618f2499e5a540264f833" kind="function"><name>AddControllers</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a0d7859f9cad50e8e9fdf015100780e07" kind="function"><name>AddEndpointsApiExplorer</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1ae0ce43c019a5621d731d0c622c793644" kind="function"><name>AddSwaggerGen</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a3b245bd9cec0926214206d043efa613a" kind="function"><name>AddScoped&lt; FileContext &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a95fc4a9c32b33ddac38e4068bd316037" kind="function"><name>AddScoped&lt; IUserDao, UserFileDao &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1afe00142d079f47b205fcaf1c9f5c636f" kind="function"><name>AddScoped&lt; IUserLogic, UserLogic &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a8dbf3f9bc1ec2aa3a46fb360fc92d025" kind="function"><name>AddScoped&lt; IPostDao, PostFileDao &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a761ff1b30e2e3e3a0893e9fc44e7b5de" kind="function"><name>AddScoped&lt; IPostLogic, PostLogic &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a495f0380ba53bc755f4d772fcf52f1f8" kind="function"><name>AddAuthentication</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1af28a70e4e3146d0106efbb9b60bf5e94" kind="function"><name>AddScoped&lt; IAuthService, AuthService &gt;</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1accaa45fdc01c3ac00a3e0edb7bb74532" kind="function"><name>AddPolicies</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kind="function"><name>if</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a6435d8beeff4999dc0b0c6d60a86a4e2" kind="function"><name>UseAuthentication</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a490c4127fedc91f86231d9e4d1331522" kind="function"><name>UseCors</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1a9e2ee3170aa6279b68eefd1651f7d96c" kind="function"><name>MapControllers</name></member>
+    <member refid="folder_2_web_a_p_i_2_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_web_a_p_i_2_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_web_a_p_i_2_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1abc3694a0e15618f2499e5a540264f833" kind="function"><name>AddControllers</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a0d7859f9cad50e8e9fdf015100780e07" kind="function"><name>AddEndpointsApiExplorer</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1ae0ce43c019a5621d731d0c622c793644" kind="function"><name>AddSwaggerGen</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a3b245bd9cec0926214206d043efa613a" kind="function"><name>AddScoped&lt; FileContext &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a95fc4a9c32b33ddac38e4068bd316037" kind="function"><name>AddScoped&lt; IUserDao, UserFileDao &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1afe00142d079f47b205fcaf1c9f5c636f" kind="function"><name>AddScoped&lt; IUserLogic, UserLogic &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a8dbf3f9bc1ec2aa3a46fb360fc92d025" kind="function"><name>AddScoped&lt; IPostDao, PostFileDao &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a761ff1b30e2e3e3a0893e9fc44e7b5de" kind="function"><name>AddScoped&lt; IPostLogic, PostLogic &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a495f0380ba53bc755f4d772fcf52f1f8" kind="function"><name>AddAuthentication</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1af28a70e4e3146d0106efbb9b60bf5e94" kind="function"><name>AddScoped&lt; IAuthService, AuthService &gt;</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1accaa45fdc01c3ac00a3e0edb7bb74532" kind="function"><name>AddPolicies</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kind="function"><name>if</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a6435d8beeff4999dc0b0c6d60a86a4e2" kind="function"><name>UseAuthentication</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a490c4127fedc91f86231d9e4d1331522" kind="function"><name>UseCors</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1a9e2ee3170aa6279b68eefd1651f7d96c" kind="function"><name>MapControllers</name></member>
+    <member refid="_web_a_p_i_2_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_blazor_wasm_2_services_2_http_2_jwt_auth_service_8cs" kind="file"><name>JwtAuthService.cs</name>
+  </compound>
+  <compound refid="folder_2_blazor_wasm_2_services_2_http_2_jwt_auth_service_8cs" kind="file"><name>JwtAuthService.cs</name>
+  </compound>
+  <compound refid="_post_service_8cs" kind="file"><name>PostService.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_2_services_2_i_auth_service_8cs" kind="file"><name>IAuthService.cs</name>
+  </compound>
+  <compound refid="folder_2_blazor_wasm_2_services_2_i_auth_service_8cs" kind="file"><name>IAuthService.cs</name>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_services_2_i_auth_service_8cs" kind="file"><name>IAuthService.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_2_services_2_i_auth_service_8cs" kind="file"><name>IAuthService.cs</name>
+  </compound>
+  <compound refid="_i_post_service_8cs" kind="file"><name>IPostService.cs</name>
+  </compound>
+  <compound refid="_blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="folder_2_blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_authorisation_policies_8cs" kind="file"><name>AuthorisationPolicies.cs</name>
+  </compound>
+  <compound refid="_post_create_dto_8cs" kind="file"><name>PostCreateDto.cs</name>
+  </compound>
+  <compound refid="_post_update_dto_8cs" kind="file"><name>PostUpdateDto.cs</name>
+  </compound>
+  <compound refid="_search_post_parameters_dto_8cs" kind="file"><name>SearchPostParametersDto.cs</name>
+  </compound>
+  <compound refid="_search_user_parameters_dto_8cs" kind="file"><name>SearchUserParametersDto.cs</name>
+  </compound>
+  <compound refid="_user_create_dto_8cs" kind="file"><name>UserCreateDto.cs</name>
+  </compound>
+  <compound refid="_user_login_dto_8cs" kind="file"><name>UserLoginDto.cs</name>
+  </compound>
+  <compound refid="_post_8cs" kind="file"><name>Post.cs</name>
+  </compound>
+  <compound refid="_user_8cs" kind="file"><name>User.cs</name>
+  </compound>
+  <compound refid="_domain_8_assembly_info_8cs" kind="file"><name>Domain.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_domain_8_global_usings_8g_8cs" kind="file"><name>Domain.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_post_file_dao_8cs" kind="file"><name>PostFileDao.cs</name>
+  </compound>
+  <compound refid="_user_file_dao_8cs" kind="file"><name>UserFileDao.cs</name>
+  </compound>
+  <compound refid="_data_container_8cs" kind="file"><name>DataContainer.cs</name>
+  </compound>
+  <compound refid="_file_context_8cs" kind="file"><name>FileContext.cs</name>
+  </compound>
+  <compound refid="_file_data_8_assembly_info_8cs" kind="file"><name>FileData.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_file_data_8_global_usings_8g_8cs" kind="file"><name>FileData.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="folder_2_shared_2_class1_8cs" kind="file"><name>Class1.cs</name>
+  </compound>
+  <compound refid="_shared_2_class1_8cs" kind="file"><name>Class1.cs</name>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_controllers_2_auth_controller_8cs" kind="file"><name>AuthController.cs</name>
+    <member refid="folder_2_web_a_p_i_2_controllers_2_auth_controller_8cs_1a48712954fbf9469353794c7c60e81ed1" kind="typedef"><name>JwtRegisteredClaimNames</name></member>
+  </compound>
+  <compound refid="_web_a_p_i_2_controllers_2_auth_controller_8cs" kind="file"><name>AuthController.cs</name>
+    <member refid="_web_a_p_i_2_controllers_2_auth_controller_8cs_1a48712954fbf9469353794c7c60e81ed1" kind="typedef"><name>JwtRegisteredClaimNames</name></member>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_controllers_2_post_controller_8cs" kind="file"><name>PostController.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_2_controllers_2_post_controller_8cs" kind="file"><name>PostController.cs</name>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_controllers_2_user_controller_8cs" kind="file"><name>UserController.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_2_controllers_2_user_controller_8cs" kind="file"><name>UserController.cs</name>
+  </compound>
+  <compound refid="folder_2_web_a_p_i_2_services_2_auth_service_8cs" kind="file"><name>AuthService.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_2_services_2_auth_service_8cs" kind="file"><name>AuthService.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_8_assembly_info_8cs" kind="file"><name>WebAPI.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_8_global_usings_8g_8cs" kind="file"><name>WebAPI.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_web_a_p_i_8_mvc_application_parts_assembly_info_8cs" kind="file"><name>WebAPI.MvcApplicationPartsAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="md__blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e" kind="page"><name>md__blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="md_folder_2_blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e" kind="page"><name>md_folder_2_blazor_wasm_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_eb1463819d84903762eb6f59cc0c4383" kind="dir"><name>Application</name>
+  </compound>
+  <compound refid="dir_94c62ea721aa8691e24bb771ca57dddf" kind="dir"><name>BlazorWasm/Auth</name>
+  </compound>
+  <compound refid="dir_82d09fbef4492bc60d911b1ce8c81f59" kind="dir"><name>folder/BlazorWasm/Auth</name>
+  </compound>
+  <compound refid="dir_f79745c1242e2726a47d2b24538fe341" kind="dir"><name>Domain/Auths</name>
+  </compound>
+  <compound refid="dir_3ea7da4b74e44ec750bec6061896ad86" kind="dir"><name>BlazorWasm</name>
+  </compound>
+  <compound refid="dir_f7c412765db18bdd1764a883021eaa20" kind="dir"><name>folder/BlazorWasm</name>
+  </compound>
+  <compound refid="dir_4a56e95a352f8dd7c832f7f8af1602ab" kind="dir"><name>folder/WebAPI/Controllers</name>
+  </compound>
+  <compound refid="dir_7bad5d26f876e7161ab9b01c60b8864a" kind="dir"><name>WebAPI/Controllers</name>
+  </compound>
+  <compound refid="dir_b879543ee6ae42701115ee55f97c0e64" kind="dir"><name>BlazorWasm/wwwroot/css</name>
+  </compound>
+  <compound refid="dir_f1103f329d175c649dfb26ad18e664aa" kind="dir"><name>folder/BlazorWasm/wwwroot/css</name>
+  </compound>
+  <compound refid="dir_34a14ee4b7bec1d99bf09de32d3e5297" kind="dir"><name>FileData/DAOs</name>
+  </compound>
+  <compound refid="dir_55198698640d0537336279b54f54d82c" kind="dir"><name>Application/obj/Debug</name>
+  </compound>
+  <compound refid="dir_665fd76655711bf2a5a6ad3d8bf38ad3" kind="dir"><name>BlazorWasm/obj/Debug</name>
+  </compound>
+  <compound refid="dir_3fa12e8ba99357fb7c04d9149f3b44b9" kind="dir"><name>Domain/obj/Debug</name>
+  </compound>
+  <compound refid="dir_ef582bf3ba1c12edd7a70fd26a26c02c" kind="dir"><name>FileData/obj/Debug</name>
+  </compound>
+  <compound refid="dir_5660187a6e72e780e557ac28575d4b5d" kind="dir"><name>WebAPI/obj/Debug</name>
+  </compound>
+  <compound refid="dir_8c888e3f1190d8e08b273c29d1443e32" kind="dir"><name>Domain</name>
+  </compound>
+  <compound refid="dir_142f28ba630de44da101f87319caa406" kind="dir"><name>Domain/DTOs</name>
+  </compound>
+  <compound refid="dir_9088a83d7ee906be5a7b7656c6019c58" kind="dir"><name>FileData</name>
+  </compound>
+  <compound refid="dir_c807abc01c3358b2409f070c37c24516" kind="dir"><name>folder</name>
+  </compound>
+  <compound refid="dir_2d68cd0fb266e613359de411f17999b9" kind="dir"><name>BlazorWasm/Services/Http</name>
+  </compound>
+  <compound refid="dir_b02d98001f5b22a6172eb7e25d6f4de5" kind="dir"><name>folder/BlazorWasm/Services/Http</name>
+  </compound>
+  <compound refid="dir_0a85c93e64a9b1cf8d013396f750ae3f" kind="dir"><name>Application/I-DAO</name>
+  </compound>
+  <compound refid="dir_914e1b4e1bcb1ff897d22bdf39837dd0" kind="dir"><name>Application/I-Logic</name>
+  </compound>
+  <compound refid="dir_561dec857dbd2c71c4d5477b92f4dd0e" kind="dir"><name>Application/Logic</name>
+  </compound>
+  <compound refid="dir_e9bf0592b8ba5807bfcce7cbd6b0123f" kind="dir"><name>Domain/Models</name>
+  </compound>
+  <compound refid="dir_26c10ab7a9ecce1a6c88aaeb09f856c6" kind="dir"><name>Application/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_91475ae47b8770f9a75e7ae3b0b70508" kind="dir"><name>BlazorWasm/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_40c732c5f202d7682be86bbfa3b9ec48" kind="dir"><name>Domain/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_eecfef27aa276184a158d24c7402957a" kind="dir"><name>FileData/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_fe396ff58152e40f44a298478f302ad9" kind="dir"><name>WebAPI/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_d9e8db57fd4192eb1e34a3c47b60ba7e" kind="dir"><name>Application/obj</name>
+  </compound>
+  <compound refid="dir_e2bd4f1d9df2ebce5a298c645d31b56a" kind="dir"><name>BlazorWasm/obj</name>
+  </compound>
+  <compound refid="dir_bbedd37c473ae4a8226c8dcbf7c99165" kind="dir"><name>Domain/obj</name>
+  </compound>
+  <compound refid="dir_fa3baccaba435b64128d7d27583f0e54" kind="dir"><name>FileData/obj</name>
+  </compound>
+  <compound refid="dir_8d102542ef418fd1dbd5309f29d66119" kind="dir"><name>WebAPI/obj</name>
+  </compound>
+  <compound refid="dir_bae4edc06e4547be58e77e66478894b5" kind="dir"><name>BlazorWasm/wwwroot/css/open-iconic</name>
+  </compound>
+  <compound refid="dir_10c7a3a9f9bed7dbbdbfee3165c77c38" kind="dir"><name>folder/BlazorWasm/wwwroot/css/open-iconic</name>
+  </compound>
+  <compound refid="dir_daed19cf3b7338090d07a47f01595c05" kind="dir"><name>BlazorWasm/Services</name>
+  </compound>
+  <compound refid="dir_e2a3bfa3fbda2d161b659ee6dd42214a" kind="dir"><name>folder/BlazorWasm/Services</name>
+  </compound>
+  <compound refid="dir_236e44dfc7e8ec1110dc36263165e5e8" kind="dir"><name>folder/WebAPI/Services</name>
+  </compound>
+  <compound refid="dir_ffcff472c2e0d2e3a6058192b0df5477" kind="dir"><name>WebAPI/Services</name>
+  </compound>
+  <compound refid="dir_8946f3ead213832d1ed52d601f38a4e5" kind="dir"><name>folder/Shared</name>
+  </compound>
+  <compound refid="dir_da555cc5272c9bb1aca8990be5c6787a" kind="dir"><name>Shared</name>
+  </compound>
+  <compound refid="dir_b1b0accff1422ac44066be846bb6359e" kind="dir"><name>folder/WebAPI</name>
+  </compound>
+  <compound refid="dir_5dafa3a0f4d587e4195cd26ab32132ab" kind="dir"><name>WebAPI</name>
+  </compound>
+  <compound refid="dir_802071c9c7e072ba1057cfe172a6165b" kind="dir"><name>BlazorWasm/wwwroot</name>
+  </compound>
+  <compound refid="dir_08e391d5a8cfb287c24ba8710977de28" kind="dir"><name>folder/BlazorWasm/wwwroot</name>
+  </compound>
+</doxygenindex>

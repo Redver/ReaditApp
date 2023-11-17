@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_d_t_os_1_1_user_login_dto" kind="class" language="C#" prot="public">
+    <compoundname>Domain::DTOs::UserLoginDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_user_login_dto_1afebd9a23d1a47c346f2bd3d1fcc3230d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.DTOs.UserLoginDto.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>Domain.DTOs.UserLoginDto.Username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/UserLoginDto.cs" line="5" column="19" bodyfile="Domain/DTOs/UserLoginDto.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_user_login_dto_1ab43daf04eadac82b512ad374fafc4ee7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.DTOs.UserLoginDto.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Domain.DTOs.UserLoginDto.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/UserLoginDto.cs" line="6" column="19" bodyfile="Domain/DTOs/UserLoginDto.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/DTOs/UserLoginDto.cs" line="3" column="7" bodyfile="Domain/DTOs/UserLoginDto.cs" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_d_t_os_1_1_user_login_dto_1ab43daf04eadac82b512ad374fafc4ee7" prot="public" virt="non-virtual"><scope>Domain::DTOs::UserLoginDto</scope><name>Password</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_user_login_dto_1afebd9a23d1a47c346f2bd3d1fcc3230d" prot="public" virt="non-virtual"><scope>Domain::DTOs::UserLoginDto</scope><name>Username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

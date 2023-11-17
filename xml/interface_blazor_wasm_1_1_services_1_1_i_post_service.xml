@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interface_blazor_wasm_1_1_services_1_1_i_post_service" kind="interface" language="C#" prot="public">
+    <compoundname>BlazorWasm::Services::IPostService</compoundname>
+    <derivedcompoundref refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service" prot="public" virt="non-virtual">BlazorWasm.Services.Http.PostService</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa09ced0befc0b2c7c74adb6f47c3e525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; Post &gt; &gt; BlazorWasm.Services.IPostService.GetAllAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllAsync</name>
+        <qualifiedname>BlazorWasm.Services.IPostService.GetAllAsync</qualifiedname>
+        <reimplementedby refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a91571b857ff733fa20df3181a2dd6f9f">GetAllAsync</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/IPostService.cs" line="8" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa74075c367c223cf64081fafeda71d08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task BlazorWasm.Services.IPostService.CreateAsync</definition>
+        <argsstring>(PostCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>BlazorWasm.Services.IPostService.CreateAsync</qualifiedname>
+        <reimplementedby refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a1a3805585fb2c3161a68e3c112c36a00">CreateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/IPostService.cs" line="10" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_blazor_wasm_1_1_services_1_1_i_post_service_1a6cf8a77e202454bba1b9ff24b56d0d11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task BlazorWasm.Services.IPostService.UpdateAsync</definition>
+        <argsstring>(PostUpdateDto updateDto)</argsstring>
+        <name>UpdateAsync</name>
+        <qualifiedname>BlazorWasm.Services.IPostService.UpdateAsync</qualifiedname>
+        <reimplementedby refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af770fbe5a5b1abf350088603cea8eed6">UpdateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kindref="compound">PostUpdateDto</ref></type>
+          <declname>updateDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/IPostService.cs" line="12" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlazorWasm.Services.IPostService</label>
+        <link refid="interface_blazor_wasm_1_1_services_1_1_i_post_service"/>
+      </node>
+      <node id="2">
+        <label>BlazorWasm.Services.Http.PostService</label>
+        <link refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="BlazorWasm/Services/IPostService.cs" line="6" column="18" bodyfile="BlazorWasm/Services/IPostService.cs" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa74075c367c223cf64081fafeda71d08" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::IPostService</scope><name>CreateAsync</name></member>
+      <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa09ced0befc0b2c7c74adb6f47c3e525" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::IPostService</scope><name>GetAllAsync</name></member>
+      <member refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1a6cf8a77e202454bba1b9ff24b56d0d11" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::IPostService</scope><name>UpdateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

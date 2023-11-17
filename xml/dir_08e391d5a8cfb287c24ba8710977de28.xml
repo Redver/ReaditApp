@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_08e391d5a8cfb287c24ba8710977de28" kind="dir">
+    <compoundname>folder/BlazorWasm/wwwroot</compoundname>
+    <innerdir refid="dir_f1103f329d175c649dfb26ad18e664aa">folder/BlazorWasm/wwwroot/css</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/BlazorWasm/wwwroot/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_models_1_1_user" kind="class" language="C#" prot="public">
+    <compoundname>Domain::Models::User</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_user_1af3bbcde6a8e5f3e318c2bc8e277e5f84" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.Models.User.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <qualifiedname>Domain.Models.User.UserName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/User.cs" line="5" column="19" bodyfile="Domain/Models/User.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_user_1a60822fb40e5f2f276c28de248cc96437" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.Models.User.PassWord</definition>
+        <argsstring></argsstring>
+        <name>PassWord</name>
+        <qualifiedname>Domain.Models.User.PassWord</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/User.cs" line="6" column="19" bodyfile="Domain/Models/User.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_user_1a31f443ecb22b04d3d6b38fb322e12e58" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Domain.Models.User.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Domain.Models.User.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/User.cs" line="7" column="16" bodyfile="Domain/Models/User.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_user_1a3c0021dc20744c551796b61f67ca2c9a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Domain.Models.User.Coins</definition>
+        <argsstring></argsstring>
+        <name>Coins</name>
+        <qualifiedname>Domain.Models.User.Coins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/User.cs" line="8" column="16" bodyfile="Domain/Models/User.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/Models/User.cs" line="3" column="7" bodyfile="Domain/Models/User.cs" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_models_1_1_user_1a3c0021dc20744c551796b61f67ca2c9a" prot="public" virt="non-virtual"><scope>Domain::Models::User</scope><name>Coins</name></member>
+      <member refid="class_domain_1_1_models_1_1_user_1a31f443ecb22b04d3d6b38fb322e12e58" prot="public" virt="non-virtual"><scope>Domain::Models::User</scope><name>Id</name></member>
+      <member refid="class_domain_1_1_models_1_1_user_1a60822fb40e5f2f276c28de248cc96437" prot="public" virt="non-virtual"><scope>Domain::Models::User</scope><name>PassWord</name></member>
+      <member refid="class_domain_1_1_models_1_1_user_1af3bbcde6a8e5f3e318c2bc8e277e5f84" prot="public" virt="non-virtual"><scope>Domain::Models::User</scope><name>UserName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

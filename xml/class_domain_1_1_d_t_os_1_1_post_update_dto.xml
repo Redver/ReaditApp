@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_d_t_os_1_1_post_update_dto" kind="class" language="C#" prot="public">
+    <compoundname>Domain::DTOs::PostUpdateDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a463800007718142b93cf22e66e398e08" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Domain.DTOs.PostUpdateDto.PostId</definition>
+        <argsstring></argsstring>
+        <name>PostId</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="9" column="16" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7adf070428433d099ef201701e4368bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostUpdateDto.Commenter</definition>
+        <argsstring></argsstring>
+        <name>Commenter</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.Commenter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="11" column="19" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7d7a3fe751a6c56081b38b8dc9db7548" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostUpdateDto.Comment</definition>
+        <argsstring></argsstring>
+        <name>Comment</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.Comment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="13" column="19" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a6bb553f30a0ecc154fed051ea0280ea7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostUpdateDto.PostAuthor</definition>
+        <argsstring></argsstring>
+        <name>PostAuthor</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostAuthor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="15" column="19" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1aa414cb1adda462f192aaf1333f81fb21" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostUpdateDto.PostTitle</definition>
+        <argsstring></argsstring>
+        <name>PostTitle</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostTitle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="17" column="19" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1ae6a14441c3915373fbdae3e5b0a8f1f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostUpdateDto.PostBody</definition>
+        <argsstring></argsstring>
+        <name>PostBody</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostBody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="18" column="19" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1af61fe7c75c25b9eae2afcb077cd2cc62" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime?</type>
+        <definition>DateTime? Domain.DTOs.PostUpdateDto.PostDateTime</definition>
+        <argsstring></argsstring>
+        <name>PostDateTime</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostDateTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="19" column="21" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a311cf10683121b24eafe90cdf53a1a6c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;?</type>
+        <definition>List&lt;Post&gt;? Domain.DTOs.PostUpdateDto.PostComments</definition>
+        <argsstring></argsstring>
+        <name>PostComments</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostComments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="20" column="17" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a9029ca420121104ab31268e8499dee27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.DTOs.PostUpdateDto.PostUpdateDto</definition>
+        <argsstring>(int? postId, string? postAuthor, string? postTitle, string? postBody, DateTime? postDateTime, string? commenter, string? comment, List&lt; Post &gt;? postComments)</argsstring>
+        <name>PostUpdateDto</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostUpdateDto</qualifiedname>
+        <param>
+          <type>int?</type>
+          <declname>postId</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>postAuthor</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>postTitle</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>postBody</declname>
+        </param>
+        <param>
+          <type>DateTime?</type>
+          <declname>postDateTime</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>commenter</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>comment</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;?</type>
+          <declname>postComments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="24" column="12" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="24" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_domain_1_1_d_t_os_1_1_post_update_dto_1a91f434f5a0433c9d52e29580ed7b7550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.DTOs.PostUpdateDto.PostUpdateDto</definition>
+        <argsstring>()</argsstring>
+        <name>PostUpdateDto</name>
+        <qualifiedname>Domain.DTOs.PostUpdateDto.PostUpdateDto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostUpdateDto.cs" line="36" column="12" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/DTOs/PostUpdateDto.cs" line="7" column="7" bodyfile="Domain/DTOs/PostUpdateDto.cs" bodystart="8" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7d7a3fe751a6c56081b38b8dc9db7548" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>Comment</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a7adf070428433d099ef201701e4368bc" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>Commenter</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a6bb553f30a0ecc154fed051ea0280ea7" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostAuthor</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1ae6a14441c3915373fbdae3e5b0a8f1f8" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostBody</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a311cf10683121b24eafe90cdf53a1a6c" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostComments</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1af61fe7c75c25b9eae2afcb077cd2cc62" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostDateTime</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a463800007718142b93cf22e66e398e08" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostId</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1aa414cb1adda462f192aaf1333f81fb21" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostTitle</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a9029ca420121104ab31268e8499dee27" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostUpdateDto</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_update_dto_1a91f434f5a0433c9d52e29580ed7b7550" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostUpdateDto</scope><name>PostUpdateDto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

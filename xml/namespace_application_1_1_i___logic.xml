@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_application_1_1_i___logic" kind="namespace" language="C#">
+    <compoundname>Application::I_Logic</compoundname>
+    <innerclass refid="interface_application_1_1_i___logic_1_1_i_post_logic" prot="public">Application::I_Logic::IPostLogic</innerclass>
+    <innerclass refid="interface_application_1_1_i___logic_1_1_i_user_logic" prot="public">Application::I_Logic::IUserLogic</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Application/I-Logic/IPostLogic.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

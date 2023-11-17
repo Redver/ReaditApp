@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_f7c412765db18bdd1764a883021eaa20" kind="dir">
+    <compoundname>folder/BlazorWasm</compoundname>
+    <innerdir refid="dir_82d09fbef4492bc60d911b1ce8c81f59">folder/BlazorWasm/Auth</innerdir>
+    <innerdir refid="dir_e2a3bfa3fbda2d161b659ee6dd42214a">folder/BlazorWasm/Services</innerdir>
+    <innerdir refid="dir_08e391d5a8cfb287c24ba8710977de28">folder/BlazorWasm/wwwroot</innerdir>
+    <innerfile refid="folder_2_blazor_wasm_2_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/BlazorWasm/"/>
+  </compounddef>
+</doxygen>

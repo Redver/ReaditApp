@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_d_t_os_1_1_post_create_dto" kind="class" language="C#" prot="public">
+    <compoundname>Domain::DTOs::PostCreateDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_create_dto_1a7ddb836abf2bdef46b0df35451270972" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostCreateDto.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>Domain.DTOs.PostCreateDto.Title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostCreateDto.cs" line="12" column="19" bodyfile="Domain/DTOs/PostCreateDto.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_create_dto_1acfb81a18a3d346d05ad393a2dd68ba27" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.DTOs.PostCreateDto.Author</definition>
+        <argsstring></argsstring>
+        <name>Author</name>
+        <qualifiedname>Domain.DTOs.PostCreateDto.Author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostCreateDto.cs" line="13" column="19" bodyfile="Domain/DTOs/PostCreateDto.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_create_dto_1ac9edaae02451978d9ad2de21ede8fb58" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.DTOs.PostCreateDto.Content</definition>
+        <argsstring></argsstring>
+        <name>Content</name>
+        <qualifiedname>Domain.DTOs.PostCreateDto.Content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostCreateDto.cs" line="14" column="19" bodyfile="Domain/DTOs/PostCreateDto.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_domain_1_1_d_t_os_1_1_post_create_dto_1a77cd5d6c86deaa46ace18e7fb74e3484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.DTOs.PostCreateDto.PostCreateDto</definition>
+        <argsstring>(string title, string author, string content)</argsstring>
+        <name>PostCreateDto</name>
+        <qualifiedname>Domain.DTOs.PostCreateDto.PostCreateDto</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>author</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostCreateDto.cs" line="5" column="12" bodyfile="Domain/DTOs/PostCreateDto.cs" bodystart="5" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/DTOs/PostCreateDto.cs" line="3" column="7" bodyfile="Domain/DTOs/PostCreateDto.cs" bodystart="4" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1acfb81a18a3d346d05ad393a2dd68ba27" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostCreateDto</scope><name>Author</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1ac9edaae02451978d9ad2de21ede8fb58" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostCreateDto</scope><name>Content</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a77cd5d6c86deaa46ace18e7fb74e3484" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostCreateDto</scope><name>PostCreateDto</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_create_dto_1a7ddb836abf2bdef46b0df35451270972" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostCreateDto</scope><name>Title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

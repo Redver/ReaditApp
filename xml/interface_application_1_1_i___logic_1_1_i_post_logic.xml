@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interface_application_1_1_i___logic_1_1_i_post_logic" kind="interface" language="C#" prot="public">
+    <compoundname>Application::I_Logic::IPostLogic</compoundname>
+    <derivedcompoundref refid="class_application_1_1_logic_1_1_post_logic" prot="public" virt="non-virtual">Application.Logic.PostLogic</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_application_1_1_i___logic_1_1_i_post_logic_1a09ff5444ca650f255af6aaeab5f095c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>Task&lt; Post &gt; Application.I_Logic.IPostLogic.CreatePostAsync</definition>
+        <argsstring>(PostCreateDto postCreateDto)</argsstring>
+        <name>CreatePostAsync</name>
+        <qualifiedname>Application.I_Logic.IPostLogic.CreatePostAsync</qualifiedname>
+        <reimplementedby refid="class_application_1_1_logic_1_1_post_logic_1a8692ea06e2b113291d7b364fbe27fca0">CreatePostAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></type>
+          <declname>postCreateDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/I-Logic/IPostLogic.cs" line="8" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_i___logic_1_1_i_post_logic_1a00c4c701feb98fb4f02d2cdc84644e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; Post &gt; &gt; Application.I_Logic.IPostLogic.GetAllPostsAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllPostsAsync</name>
+        <qualifiedname>Application.I_Logic.IPostLogic.GetAllPostsAsync</qualifiedname>
+        <reimplementedby refid="class_application_1_1_logic_1_1_post_logic_1ac7bf616f0e2f29cc7188e5313dd5724e">GetAllPostsAsync</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/I-Logic/IPostLogic.cs" line="10" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_i___logic_1_1_i_post_logic_1a4e27744c17e98286621664c48fe9b240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; Post &gt; &gt; Application.I_Logic.IPostLogic.GetAsync</definition>
+        <argsstring>(SearchPostParametersDto dto)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>Application.I_Logic.IPostLogic.GetAsync</qualifiedname>
+        <reimplementedby refid="class_application_1_1_logic_1_1_post_logic_1a37e06f6c43a9a10d46d8cebaa3293f13">GetAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto" kindref="compound">SearchPostParametersDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/I-Logic/IPostLogic.cs" line="11" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_i___logic_1_1_i_post_logic_1a86f26e5ae1bb7ff522de78140da72f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Application.I_Logic.IPostLogic.UpdatePostAsync</definition>
+        <argsstring>(PostUpdateDto dto)</argsstring>
+        <name>UpdatePostAsync</name>
+        <qualifiedname>Application.I_Logic.IPostLogic.UpdatePostAsync</qualifiedname>
+        <reimplementedby refid="class_application_1_1_logic_1_1_post_logic_1a5d53e1e5b2a57ec05cf26b9f37bf44d5">UpdatePostAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kindref="compound">PostUpdateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/I-Logic/IPostLogic.cs" line="13" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.I_Logic.IPostLogic</label>
+        <link refid="interface_application_1_1_i___logic_1_1_i_post_logic"/>
+      </node>
+      <node id="2">
+        <label>Application.Logic.PostLogic</label>
+        <link refid="class_application_1_1_logic_1_1_post_logic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Application/I-Logic/IPostLogic.cs" line="6" column="18" bodyfile="Application/I-Logic/IPostLogic.cs" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a09ff5444ca650f255af6aaeab5f095c5" prot="public" virt="non-virtual"><scope>Application::I_Logic::IPostLogic</scope><name>CreatePostAsync</name></member>
+      <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a00c4c701feb98fb4f02d2cdc84644e20" prot="public" virt="non-virtual"><scope>Application::I_Logic::IPostLogic</scope><name>GetAllPostsAsync</name></member>
+      <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a4e27744c17e98286621664c48fe9b240" prot="public" virt="non-virtual"><scope>Application::I_Logic::IPostLogic</scope><name>GetAsync</name></member>
+      <member refid="interface_application_1_1_i___logic_1_1_i_post_logic_1a86f26e5ae1bb7ff522de78140da72f90" prot="public" virt="non-virtual"><scope>Application::I_Logic::IPostLogic</scope><name>UpdatePostAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

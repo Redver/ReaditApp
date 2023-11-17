@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_eb1463819d84903762eb6f59cc0c4383" kind="dir">
+    <compoundname>Application</compoundname>
+    <innerdir refid="dir_0a85c93e64a9b1cf8d013396f750ae3f">Application/I-DAO</innerdir>
+    <innerdir refid="dir_914e1b4e1bcb1ff897d22bdf39837dd0">Application/I-Logic</innerdir>
+    <innerdir refid="dir_561dec857dbd2c71c4d5477b92f4dd0e">Application/Logic</innerdir>
+    <innerdir refid="dir_d9e8db57fd4192eb1e34a3c47b60ba7e">Application/obj</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Application/"/>
+  </compounddef>
+</doxygen>

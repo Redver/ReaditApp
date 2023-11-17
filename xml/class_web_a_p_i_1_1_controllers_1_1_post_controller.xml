@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_web_a_p_i_1_1_controllers_1_1_post_controller" kind="class" language="C#" prot="public">
+    <compoundname>WebAPI::Controllers::PostController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a80bd04ca9645c6cd250eac68d5879386" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_i___logic_1_1_i_post_logic" kindref="compound">IPostLogic</ref></type>
+        <definition>readonly IPostLogic WebAPI.Controllers.PostController::postLogic</definition>
+        <argsstring></argsstring>
+        <name>postLogic</name>
+        <qualifiedname>WebAPI.Controllers.PostController.postLogic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/PostController.cs" line="15" column="33" bodyfile="folder/WebAPI/Controllers/PostController.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebAPI.Controllers.PostController.PostController</definition>
+        <argsstring>(IPostLogic postLogic)</argsstring>
+        <name>PostController</name>
+        <qualifiedname>WebAPI.Controllers.PostController.PostController</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic" kindref="compound">IPostLogic</ref></type>
+          <declname>postLogic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/PostController.cs" line="17" column="12" bodyfile="folder/WebAPI/Controllers/PostController.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; Post &gt; &gt; WebAPI.Controllers.PostController.CreateAsync</definition>
+        <argsstring>(PostCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>WebAPI.Controllers.PostController.CreateAsync</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/PostController.cs" line="23" column="23" bodyfile="folder/WebAPI/Controllers/PostController.cs" bodystart="23" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; IEnumerable&lt; Post &gt; &gt; &gt; WebAPI.Controllers.PostController.GetAllAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllAsync</name>
+        <qualifiedname>WebAPI.Controllers.PostController.GetAllAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/PostController.cs" line="39" column="23" bodyfile="folder/WebAPI/Controllers/PostController.cs" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebAPI.Controllers.PostController.PostController</definition>
+        <argsstring>(IPostLogic postLogic)</argsstring>
+        <name>PostController</name>
+        <qualifiedname>WebAPI.Controllers.PostController.PostController</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_i___logic_1_1_i_post_logic" kindref="compound">IPostLogic</ref></type>
+          <declname>postLogic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/PostController.cs" line="16" column="12" bodyfile="WebAPI/Controllers/PostController.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; Post &gt; &gt; WebAPI.Controllers.PostController.CreateAsync</definition>
+        <argsstring>(PostCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>WebAPI.Controllers.PostController.CreateAsync</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/PostController.cs" line="22" column="23" bodyfile="WebAPI/Controllers/PostController.cs" bodystart="22" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; IEnumerable&lt; Post &gt; &gt; &gt; WebAPI.Controllers.PostController.GetAllAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllAsync</name>
+        <qualifiedname>WebAPI.Controllers.PostController.GetAllAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/PostController.cs" line="37" column="23" bodyfile="WebAPI/Controllers/PostController.cs" bodystart="37" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abe96907ffb852827dedd23db977fb277" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult &gt;</type>
+        <definition>async Task&lt; ActionResult &gt; WebAPI.Controllers.PostController.PatchAsync</definition>
+        <argsstring>(int postId, PostUpdateDto dto)</argsstring>
+        <name>PatchAsync</name>
+        <qualifiedname>WebAPI.Controllers.PostController.PatchAsync</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>postId</declname>
+        </param>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kindref="compound">PostUpdateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/PostController.cs" line="53" column="23" bodyfile="WebAPI/Controllers/PostController.cs" bodystart="53" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.PostController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_post_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.PostController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_post_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="folder/WebAPI/Controllers/PostController.cs" line="13" column="7" bodyfile="folder/WebAPI/Controllers/PostController.cs" bodystart="14" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>CreateAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abc29e63ee7c227e4a66120e3cae7995a" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>CreateAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>GetAllAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1ae40fa12c97019de5523698b64d272ef0" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>GetAllAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1abe96907ffb852827dedd23db977fb277" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>PatchAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>PostController</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a65583e77e2a9a322881a74ef338ea0e1" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>PostController</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_post_controller_1a80bd04ca9645c6cd250eac68d5879386" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::PostController</scope><name>postLogic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service" kind="class" language="C#" prot="public">
+    <compoundname>BlazorWasm::Services::Http::PostService</compoundname>
+    <basecompoundref refid="interface_blazor_wasm_1_1_services_1_1_i_post_service" prot="public" virt="non-virtual">BlazorWasm.Services.IPostService</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af6e2b0eed17aa6acb03a5e27c0dd7b9e" prot="private" static="no" mutable="no">
+        <type>readonly HttpClient</type>
+        <definition>readonly HttpClient BlazorWasm.Services.Http.PostService.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>BlazorWasm.Services.Http.PostService.client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/PostService.cs" line="11" column="33" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a6273efc6abcfa129fed03d47b3c31f0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BlazorWasm.Services.Http.PostService.PostService</definition>
+        <argsstring>(HttpClient client)</argsstring>
+        <name>PostService</name>
+        <qualifiedname>BlazorWasm.Services.Http.PostService.PostService</qualifiedname>
+        <param>
+          <type>HttpClient</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/PostService.cs" line="13" column="12" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a91571b857ff733fa20df3181a2dd6f9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>async Task&lt; IEnumerable&lt; Post &gt; &gt; BlazorWasm.Services.Http.PostService.GetAllAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.PostService.GetAllAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa09ced0befc0b2c7c74adb6f47c3e525">GetAllAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/PostService.cs" line="18" column="23" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="18" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a1a3805585fb2c3161a68e3c112c36a00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.PostService.CreateAsync</definition>
+        <argsstring>(PostCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.PostService.CreateAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1aa74075c367c223cf64081fafeda71d08">CreateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_create_dto" kindref="compound">PostCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/PostService.cs" line="33" column="23" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="33" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af770fbe5a5b1abf350088603cea8eed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task BlazorWasm.Services.Http.PostService.UpdateAsync</definition>
+        <argsstring>(PostUpdateDto dto)</argsstring>
+        <name>UpdateAsync</name>
+        <qualifiedname>BlazorWasm.Services.Http.PostService.UpdateAsync</qualifiedname>
+        <reimplements refid="interface_blazor_wasm_1_1_services_1_1_i_post_service_1a6cf8a77e202454bba1b9ff24b56d0d11">UpdateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_update_dto" kindref="compound">PostUpdateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorWasm/Services/Http/PostService.cs" line="58" column="23" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="58" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlazorWasm.Services.Http.PostService</label>
+        <link refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPostService</label>
+        <link refid="interface_blazor_wasm_1_1_services_1_1_i_post_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BlazorWasm.Services.Http.PostService</label>
+        <link refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPostService</label>
+        <link refid="interface_blazor_wasm_1_1_services_1_1_i_post_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="BlazorWasm/Services/Http/PostService.cs" line="9" column="7" bodyfile="BlazorWasm/Services/Http/PostService.cs" bodystart="10" bodyend="75"/>
+    <listofallmembers>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af6e2b0eed17aa6acb03a5e27c0dd7b9e" prot="private" virt="non-virtual"><scope>BlazorWasm::Services::Http::PostService</scope><name>client</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a1a3805585fb2c3161a68e3c112c36a00" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::PostService</scope><name>CreateAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a91571b857ff733fa20df3181a2dd6f9f" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::PostService</scope><name>GetAllAsync</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1a6273efc6abcfa129fed03d47b3c31f0c" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::PostService</scope><name>PostService</name></member>
+      <member refid="class_blazor_wasm_1_1_services_1_1_http_1_1_post_service_1af770fbe5a5b1abf350088603cea8eed6" prot="public" virt="non-virtual"><scope>BlazorWasm::Services::Http::PostService</scope><name>UpdateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

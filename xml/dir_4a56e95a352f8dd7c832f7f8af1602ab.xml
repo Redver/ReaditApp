@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4a56e95a352f8dd7c832f7f8af1602ab" kind="dir">
+    <compoundname>folder/WebAPI/Controllers</compoundname>
+    <innerfile refid="folder_2_web_a_p_i_2_controllers_2_auth_controller_8cs">AuthController.cs</innerfile>
+    <innerfile refid="folder_2_web_a_p_i_2_controllers_2_post_controller_8cs">PostController.cs</innerfile>
+    <innerfile refid="folder_2_web_a_p_i_2_controllers_2_user_controller_8cs">UserController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/WebAPI/Controllers/"/>
+  </compounddef>
+</doxygen>

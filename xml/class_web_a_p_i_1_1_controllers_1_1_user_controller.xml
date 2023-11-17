@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_web_a_p_i_1_1_controllers_1_1_user_controller" kind="class" language="C#" prot="public">
+    <compoundname>WebAPI::Controllers::UserController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0b4a7607f5f20fe48b26f535deb88a3" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_i___logic_1_1_i_user_logic" kindref="compound">IUserLogic</ref></type>
+        <definition>readonly IUserLogic WebAPI.Controllers.UserController::userLogic</definition>
+        <argsstring></argsstring>
+        <name>userLogic</name>
+        <qualifiedname>WebAPI.Controllers.UserController.userLogic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/UserController.cs" line="13" column="33" bodyfile="folder/WebAPI/Controllers/UserController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebAPI.Controllers.UserController.UserController</definition>
+        <argsstring>(IUserLogic userLogic)</argsstring>
+        <name>UserController</name>
+        <qualifiedname>WebAPI.Controllers.UserController.UserController</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_i___logic_1_1_i_user_logic" kindref="compound">IUserLogic</ref></type>
+          <declname>userLogic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/UserController.cs" line="15" column="12" bodyfile="folder/WebAPI/Controllers/UserController.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; User &gt; &gt; WebAPI.Controllers.UserController.CreateAsync</definition>
+        <argsstring>(UserCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>WebAPI.Controllers.UserController.CreateAsync</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_user_create_dto" kindref="compound">UserCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/UserController.cs" line="21" column="23" bodyfile="folder/WebAPI/Controllers/UserController.cs" bodystart="21" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; IEnumerable&lt; User &gt; &gt; &gt; WebAPI.Controllers.UserController.GetAsync</definition>
+        <argsstring>([FromQuery] string? username)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>WebAPI.Controllers.UserController.GetAsync</qualifiedname>
+        <param>
+          <attributes>[FromQuery]</attributes>
+          <type>string?</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="folder/WebAPI/Controllers/UserController.cs" line="36" column="23" bodyfile="folder/WebAPI/Controllers/UserController.cs" bodystart="36" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebAPI.Controllers.UserController.UserController</definition>
+        <argsstring>(IUserLogic userLogic)</argsstring>
+        <name>UserController</name>
+        <qualifiedname>WebAPI.Controllers.UserController.UserController</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_i___logic_1_1_i_user_logic" kindref="compound">IUserLogic</ref></type>
+          <declname>userLogic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/UserController.cs" line="14" column="12" bodyfile="WebAPI/Controllers/UserController.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; User &gt; &gt; WebAPI.Controllers.UserController.CreateAsync</definition>
+        <argsstring>(UserCreateDto dto)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>WebAPI.Controllers.UserController.CreateAsync</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_user_create_dto" kindref="compound">UserCreateDto</ref></type>
+          <declname>dto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/UserController.cs" line="20" column="23" bodyfile="WebAPI/Controllers/UserController.cs" bodystart="20" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt; &gt;</type>
+        <definition>async Task&lt; ActionResult&lt; IEnumerable&lt; User &gt; &gt; &gt; WebAPI.Controllers.UserController.GetAsync</definition>
+        <argsstring>([FromQuery] string? username)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>WebAPI.Controllers.UserController.GetAsync</qualifiedname>
+        <param>
+          <attributes>[FromQuery]</attributes>
+          <type>string?</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/UserController.cs" line="35" column="23" bodyfile="WebAPI/Controllers/UserController.cs" bodystart="35" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.UserController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_user_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.UserController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_user_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="folder/WebAPI/Controllers/UserController.cs" line="11" column="7" bodyfile="folder/WebAPI/Controllers/UserController.cs" bodystart="12" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>CreateAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0c84a49457765b4839239417f75671e" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>CreateAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>GetAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ac8aca96e62bf6e0334e97ea8b5ef57b4" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>GetAsync</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>UserController</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ada777a5852f0e29363407b697ec9d025" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>UserController</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_user_controller_1ad0b4a7607f5f20fe48b26f535deb88a3" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::UserController</scope><name>userLogic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -53,6 +53,18 @@
       "PassWord": "1234",
       "Id": 9,
       "Coins": null
+    },
+    {
+      "UserName": "Tim",
+      "PassWord": "1234",
+      "Id": 10,
+      "Coins": null
+    },
+    {
+      "UserName": "Mantwo",
+      "PassWord": "man",
+      "Id": 11,
+      "Coins": null
     }
   ],
   "Posts": [
@@ -233,6 +245,24 @@
       "Author": "Redv",
       "Content": "Post to help test lorum ipsum",
       "PostDate": "2023-10-31T18:23:34.2625491+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 21,
+      "Title": "One Last Test Post",
+      "Author": "Tim",
+      "Content": "Post ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost ContentPost Content",
+      "PostDate": "2023-10-31T18:58:19.2671869+01:00",
+      "Score": 0,
+      "Comments": null
+    },
+    {
+      "Id": 22,
+      "Title": "New Post Title",
+      "Author": "Mantwo",
+      "Content": "This post will appear at the top of the post list but will first redirect me to the post page",
+      "PostDate": "2023-10-31T19:01:03.4042898+01:00",
       "Score": 0,
       "Comments": null
     }

@@ -79,7 +79,8 @@
         var authState = await authService.GetAuthAsync();
         var user = authState.Identity;
 
-        string author = user.Name;
+        User author = new User();
+        author.UserName = user.Name;
         var createDto = new PostCreateDto(title, author, content);
         Console.WriteLine(title,author,content);
         errorLabel = "";

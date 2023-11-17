@@ -15,7 +15,7 @@ public class PostFileDao : IPostDao
 
     public Task<Post> CreateAsync(Post post)
     {
-        int? postid;
+        int postid;
         if (context.Posts.Any())
         {
             postid = context.Posts.Max(u => u.Id);
@@ -47,7 +47,7 @@ public class PostFileDao : IPostDao
         if (!string.IsNullOrEmpty(searchPostParametersDto.username))
         {
             posts = context.Posts.Where(p =>
-                p.Author.Equals(searchPostParametersDto.username, StringComparison.OrdinalIgnoreCase));
+                p.Author.UserName.Equals(searchPostParametersDto.username, StringComparison.OrdinalIgnoreCase));
         }
 
         if (!string.IsNullOrEmpty(searchPostParametersDto.titleContains))

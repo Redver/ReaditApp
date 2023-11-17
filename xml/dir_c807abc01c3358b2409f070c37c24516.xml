@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_c807abc01c3358b2409f070c37c24516" kind="dir">
+    <compoundname>folder</compoundname>
+    <innerdir refid="dir_f7c412765db18bdd1764a883021eaa20">folder/BlazorWasm</innerdir>
+    <innerdir refid="dir_8946f3ead213832d1ed52d601f38a4e5">folder/Shared</innerdir>
+    <innerdir refid="dir_b1b0accff1422ac44066be846bb6359e">folder/WebAPI</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="folder/"/>
+  </compounddef>
+</doxygen>
