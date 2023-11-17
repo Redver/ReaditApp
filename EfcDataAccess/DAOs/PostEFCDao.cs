@@ -21,11 +21,11 @@ public class PostEFCDao : IPostDao
         await context.SaveChangesAsync();
         return newPost.Entity;
     }
-    public Task<IEnumerable<Post>> GetAllAsync()
+    public async Task<IEnumerable<Post>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        List<Post> posts = await context.Posts.ToListAsync();
+        return posts;
     }
-    
 
     public async Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
     {
