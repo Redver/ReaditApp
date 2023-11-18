@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfcDataAccess.Migrations
 {
     [DbContext(typeof(ReaditContext))]
-    [Migration("20231117161119_InitialCreate")]
+    [Migration("20231118080548_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -36,9 +36,6 @@ namespace EfcDataAccess.Migrations
                     b.Property<DateTime>("PostDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("PostId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("Score")
                         .HasColumnType("INTEGER");
 
@@ -48,8 +45,6 @@ namespace EfcDataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
-
-                    b.HasIndex("PostId");
 
                     b.ToTable("Posts");
                 });
@@ -82,16 +77,7 @@ namespace EfcDataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.Post", null)
-                        .WithMany("Comments")
-                        .HasForeignKey("PostId");
-
                     b.Navigation("Author");
-                });
-
-            modelBuilder.Entity("Domain.Models.Post", b =>
-                {
-                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("Domain.Models.User", b =>

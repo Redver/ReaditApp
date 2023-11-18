@@ -56,14 +56,12 @@
     private Post _thisPostPage;
     private string author = "placeholder";
     private DateTime datePosted = new DateTime();
-    private List<Post> comments = new List<Post>();
 
     private string newComment = "Write your comment here";
     
     
     protected override async Task OnInitializedAsync()
     {
-        var authState = await authenticationStateTask;
         errorLabel = "";
         try
         {
@@ -79,8 +77,6 @@
             content = _thisPostPage.Content;
             author = _thisPostPage.Author.UserName;
             datePosted = _thisPostPage.PostDate;
-            comments = _thisPostPage.Comments;
-
         }
         catch (Exception e)
         {

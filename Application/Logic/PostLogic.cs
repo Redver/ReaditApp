@@ -16,7 +16,13 @@ public class PostLogic : IPostLogic
 
     public async Task<Post> CreatePostAsync(PostCreateDto post)
     {
-        var toCreate = new Post(post.Title, post.Author.Id, post.Content, DateTime.Now);
+        var toCreate = new Post();
+        toCreate.Title = post.Title;
+        toCreate.Author = post.Author;
+        toCreate.Content = post.Content;
+        toCreate.AuthorId = post.Author.Id;
+        toCreate.Score = 0;
+        toCreate.PostDate = DateTime.Now;
         var created = await postDao.CreateAsync(toCreate);
         return created;
     }

@@ -9,14 +9,22 @@ namespace EfcDataAccess.DAOs;
 public class PostEFCDao : IPostDao
 {
     private readonly ReaditContext context;
+    private UserEFCDao UserAccess;
 
     public PostEFCDao(ReaditContext context)
     {
         this.context = context;
+        UserAccess = new UserEFCDao(this.context);
     }
     
     public async Task<Post> CreateAsync(Post post)
     {
+        Console.WriteLine(post.Author);
+        User? realAuthor =  await UserAccess.GetByIdAsync(post.AuthorId);
+        if (realAuthor != null)
+        {
+            post.Author = realAuthor;
+        }
         EntityEntry<Post> newPost = await context.Posts.AddAsync(post);
         await context.SaveChangesAsync();
         return newPost.Entity;
@@ -24,6 +32,11 @@ public class PostEFCDao : IPostDao
     public async Task<IEnumerable<Post>> GetAllAsync()
     {
         List<Post> posts = await context.Posts.ToListAsync();
+        foreach (Post post in posts)
+        {
+            User author = await UserAccess.GetByIdAsync(post.AuthorId);
+            post.Author = author;
+        }
         return posts;
     }
 
